@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="-1"
+    layout_height="-1">
+    <ProgressBar
+        id="@+id/_2131361944_res_0x7f0a0098"
+        visibility="2"
+        layout_width="-2"
+        layout_height="50dp"
+        indeterminate="true"
+        indeterminateOnly="true"
+        layout_centerInParent="true"/>
+</RelativeLayout>

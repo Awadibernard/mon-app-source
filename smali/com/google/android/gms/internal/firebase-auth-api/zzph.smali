@@ -1,0 +1,148 @@
+###### Class com.google.android.gms.internal.p002firebaseauthapi.zzph (com.google.android.gms.internal.firebase-auth-api.zzph)
+.class public abstract Lcom/google/android/gms/internal/firebase-auth-api/zzph;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<ParametersT:",
+        "Lcom/google/android/gms/internal/firebase-auth-api/zzcb;",
+        "SerializationT::",
+        "Lcom/google/android/gms/internal/firebase-auth-api/zzqf;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final zza:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TParametersT;>;"
+        }
+    .end annotation
+.end field
+
+.field private final zzb:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "TSerializationT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Ljava/lang/Class;Ljava/lang/Class;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Class<",
+            "TParametersT;>;",
+            "Ljava/lang/Class<",
+            "TSerializationT;>;)V"
+        }
+    .end annotation
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzph;->zza:Ljava/lang/Class;
+
+    .line 6
+    iput-object p2, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzph;->zzb:Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/android/gms/internal/firebase-auth-api/zzpm;)V
+    .registers 4
+
+    .line 65354
+    invoke-direct {p0, p1, p2}, Lcom/google/android/gms/internal/firebase-auth-api/zzph;-><init>(Ljava/lang/Class;Ljava/lang/Class;)V
+
+    return-void
+.end method
+
+.method public static zza(Lcom/google/android/gms/internal/firebase-auth-api/zzpj;Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/android/gms/internal/firebase-auth-api/zzph;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<ParametersT:",
+            "Lcom/google/android/gms/internal/firebase-auth-api/zzcb;",
+            "SerializationT::",
+            "Lcom/google/android/gms/internal/firebase-auth-api/zzqf;",
+            ">(",
+            "Lcom/google/android/gms/internal/firebase-auth-api/zzpj<",
+            "TParametersT;TSerializationT;>;",
+            "Ljava/lang/Class<",
+            "TParametersT;>;",
+            "Ljava/lang/Class<",
+            "TSerializationT;>;)",
+            "Lcom/google/android/gms/internal/firebase-auth-api/zzph<",
+            "TParametersT;TSerializationT;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/firebase-auth-api/zzpk;
+
+    invoke-direct {v0, p1, p2, p0}, Lcom/google/android/gms/internal/firebase-auth-api/zzpk;-><init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/android/gms/internal/firebase-auth-api/zzpj;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public abstract zza(Lcom/google/android/gms/internal/firebase-auth-api/zzcb;)Lcom/google/android/gms/internal/firebase-auth-api/zzqf;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TParametersT;)TSerializationT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+.end method
+
+.method public final zza()Ljava/lang/Class;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "TParametersT;>;"
+        }
+    .end annotation
+
+    .line 2
+    iget-object p0, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzph;->zza:Ljava/lang/Class;
+
+    return-object p0
+.end method
+
+.method public final zzb()Ljava/lang/Class;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "TSerializationT;>;"
+        }
+    .end annotation
+
+    .line 3
+    iget-object p0, p0, Lcom/google/android/gms/internal/firebase-auth-api/zzph;->zzb:Ljava/lang/Class;
+
+    return-object p0
+.end method

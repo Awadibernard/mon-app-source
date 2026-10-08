@@ -1,0 +1,15 @@
+###### Class com.google.type.FractionOrBuilder (com.google.type.FractionOrBuilder)
+.class public interface abstract Lcom/google/type/FractionOrBuilder;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getDenominator()J
+.end method
+
+.method public abstract getNumerator()J
+.end method

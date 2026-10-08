@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="-1"
+    layout_height="-2">
+    <Spinner
+        id="@+id/_2131362313_res_0x7f0a0209"
+        visibility="1"
+        layout_width="0dp"
+        layout_height="-2"
+        layout_marginLeft="72dp"
+        layout_marginStart="72dp"/>
+    <include layout="@layout/_2131558542_res_0x7f0d008e"/>
+</FrameLayout>

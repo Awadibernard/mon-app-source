@@ -1,0 +1,14 @@
+###### Class com.google.android.gms.fido.R (com.google.android.gms.fido.R)
+.class public final Lcom/google/android/gms/fido/R;
+.super Ljava/lang/Object;
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 65354
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

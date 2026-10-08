@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import com.google.firebase.auth.internal.zzao;
+import java.util.Objects;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class zzabg implements zzafv<zzaif> {
+    private final /* synthetic */ zzael zza;
+
+    zzabg(zzaar zzaarVar, zzael zzaelVar) {
+        this.zza = zzaelVar;
+        Objects.requireNonNull(zzaarVar);
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzafs
+    public final void zza(String str) {
+        this.zza.zza(zzao.zza(str));
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzafv
+    public final /* synthetic */ void zza(zzaif zzaifVar) {
+        this.zza.zza(zzaifVar);
+    }
+}

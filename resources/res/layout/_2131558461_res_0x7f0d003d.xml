@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    background="@drawable/_2131230879_res_0x7f08009f"
+    layout_width="-2"
+    layout_height="-2"
+    alpha="0"
+    elevation="4dp">
+    <HorizontalScrollView
+        layout_width="-2"
+        layout_height="-2">
+        <LinearLayout
+            orientation="0"
+            layout_width="-2"
+            layout_height="-2"/>
+    </HorizontalScrollView>
+</LinearLayout>

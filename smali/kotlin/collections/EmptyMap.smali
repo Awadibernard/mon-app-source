@@ -1,0 +1,429 @@
+###### Class kotlin.collections.EmptyMap (kotlin.collections.EmptyMap)
+.class final Lkotlin/collections/EmptyMap;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/util/Map;
+.implements Ljava/io/Serializable;
+.implements Lkotlin/jvm/internal/markers/KMappedMarker;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000P\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u0000\n\u0002\u0010\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u000b\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0010\"\n\u0002\u0010&\n\u0002\u0008\u0005\n\u0002\u0010\u001e\n\u0002\u0008\u0003\u0008\u00c2\u0002\u0018\u00002\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0002\u0012\u0004\u0012\u00020\u00030\u00012\u00060\u0004j\u0002`\u0005B\t\u0008\u0002\u00a2\u0006\u0004\u0008\u0006\u0010\u0007J\u001a\u0010\n\u001a\u00020\t2\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0002H\u0096\u0002\u00a2\u0006\u0004\u0008\n\u0010\u000bJ\u000f\u0010\r\u001a\u00020\u000cH\u0016\u00a2\u0006\u0004\u0008\r\u0010\u000eJ\u000f\u0010\u0010\u001a\u00020\u000fH\u0017\u00a2\u0006\u0004\u0008\u0010\u0010\u0011J\u000f\u0010\u0012\u001a\u00020\tH\u0016\u00a2\u0006\u0004\u0008\u0012\u0010\u0013J\u0019\u0010\u0014\u001a\u00020\t2\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0002H\u0016\u00a2\u0006\u0004\u0008\u0014\u0010\u000bJ\u0017\u0010\u0015\u001a\u00020\t2\u0006\u0010\u0008\u001a\u00020\u0003H\u0016\u00a2\u0006\u0004\u0008\u0015\u0010\u0016J\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u00032\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0002H\u0097\u0002\u00a2\u0006\u0004\u0008\u0017\u0010\u0018J\u000f\u0010\u0019\u001a\u00020\u0002H\u0002\u00a2\u0006\u0004\u0008\u0019\u0010\u001aR\u0014\u0010\u001c\u001a\u00020\u001b8\u0002X\u0082T\u00a2\u0006\u0006\n\u0004\u0008\u001c\u0010\u001dR\u0014\u0010\u001f\u001a\u00020\u000c8WX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\u001e\u0010\u000eR(\u0010$\u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u0002\u0012\u0004\u0012\u00020\u00030!0 8WX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008\"\u0010#R\u001c\u0010&\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020 8WX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008%\u0010#R\u001a\u0010*\u001a\u0008\u0012\u0004\u0012\u00020\u00030\'8WX\u0096\u0004\u00a2\u0006\u0006\u001a\u0004\u0008(\u0010)"
+    }
+    d2 = {
+        "Lkotlin/collections/EmptyMap;",
+        "",
+        "",
+        "",
+        "Ljava/io/Serializable;",
+        "Lkotlin/io/asBinder;",
+        "<init>",
+        "()V",
+        "p0",
+        "",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        "",
+        "hashCode",
+        "()I",
+        "",
+        "toString",
+        "()Ljava/lang/String;",
+        "isEmpty",
+        "()Z",
+        "containsKey",
+        "containsValue",
+        "(Ljava/lang/Void;)Z",
+        "get",
+        "(Ljava/lang/Object;)Ljava/lang/Void;",
+        "readResolve",
+        "()Ljava/lang/Object;",
+        "",
+        "serialVersionUID",
+        "J",
+        "getSize",
+        "size",
+        "",
+        "",
+        "getEntries",
+        "()Ljava/util/Set;",
+        "entries",
+        "getKeys",
+        "keys",
+        "",
+        "getValues",
+        "()Ljava/util/Collection;",
+        "values"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x3,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final INSTANCE:Lkotlin/collections/EmptyMap;
+
+.field private static final serialVersionUID:J = 0x72723771cb044cd2L
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 65354
+    new-instance v0, Lkotlin/collections/EmptyMap;
+
+    invoke-direct {v0}, Lkotlin/collections/EmptyMap;-><init>()V
+
+    sput-object v0, Lkotlin/collections/EmptyMap;->INSTANCE:Lkotlin/collections/EmptyMap;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private final readResolve()Ljava/lang/Object;
+    .registers 1
+
+    .line 31
+    sget-object p0, Lkotlin/collections/EmptyMap;->INSTANCE:Lkotlin/collections/EmptyMap;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final clear()V
+    .registers 2
+
+    .line 65353
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final containsKey(Ljava/lang/Object;)Z
+    .registers 2
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final bridge containsValue(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 14
+    instance-of v0, p1, Ljava/lang/Void;
+
+    if-nez v0, :cond_6
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_6
+    check-cast p1, Ljava/lang/Void;
+
+    invoke-virtual {p0, p1}, Lkotlin/collections/EmptyMap;->containsValue(Ljava/lang/Void;)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final containsValue(Ljava/lang/Void;)Z
+    .registers 2
+
+    .line 65351
+    const-string p0, ""
+
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final entrySet()Ljava/util/Set;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/util/Map$Entry;",
+            ">;"
+        }
+    .end annotation
+
+    .line 14
+    invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getEntries()Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .registers 2
+
+    .line 17
+    instance-of p0, p1, Ljava/util/Map;
+
+    if-eqz p0, :cond_e
+
+    check-cast p1, Ljava/util/Map;
+
+    invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_e
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_e
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 14
+    invoke-virtual {p0, p1}, Lkotlin/collections/EmptyMap;->get(Ljava/lang/Object;)Ljava/lang/Void;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/lang/Void;
+    .registers 2
+
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public final getEntries()Ljava/util/Set;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/util/Map$Entry;",
+            ">;"
+        }
+    .end annotation
+
+    .line 27
+    sget-object p0, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
+
+    check-cast p0, Ljava/util/Set;
+
+    return-object p0
+.end method
+
+.method public final getKeys()Ljava/util/Set;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 28
+    sget-object p0, Lkotlin/collections/EmptySet;->INSTANCE:Lkotlin/collections/EmptySet;
+
+    check-cast p0, Ljava/util/Set;
+
+    return-object p0
+.end method
+
+.method public final getSize()I
+    .registers 1
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final getValues()Ljava/util/Collection;
+    .registers 1
+
+    .line 29
+    sget-object p0, Lkotlin/collections/EmptyList;->INSTANCE:Lkotlin/collections/EmptyList;
+
+    check-cast p0, Ljava/util/Collection;
+
+    return-object p0
+.end method
+
+.method public final hashCode()I
+    .registers 1
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public final isEmpty()Z
+    .registers 1
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public final keySet()Ljava/util/Set;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Set<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 14
+    invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getKeys()Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 65346
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final put(Ljava/lang/Object;Ljava/lang/Void;)Ljava/lang/Void;
+    .registers 3
+
+    .line 65345
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final putAll(Ljava/util/Map;)V
+    .registers 2
+
+    .line 65344
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    .line 14
+    invoke-virtual {p0, p1}, Lkotlin/collections/EmptyMap;->remove(Ljava/lang/Object;)Ljava/lang/Void;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final remove(Ljava/lang/Object;)Ljava/lang/Void;
+    .registers 2
+
+    .line 65343
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 65342
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    const-string p1, "Operation is not supported for read-only collection"
+
+    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public final size()I
+    .registers 1
+
+    .line 14
+    invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getSize()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .registers 1
+
+    .line 19
+    const-string p0, "{}"
+
+    return-object p0
+.end method
+
+.method public final values()Ljava/util/Collection;
+    .registers 1
+
+    .line 14
+    invoke-virtual {p0}, Lkotlin/collections/EmptyMap;->getValues()Ljava/util/Collection;
+
+    move-result-object p0
+
+    return-object p0
+.end method

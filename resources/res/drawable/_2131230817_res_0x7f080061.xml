@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131230816_res_0x7f080060">
+    <target
+        name="icon_null"
+        animation="@anim/_2130771985_res_0x7f010011"/>
+    <target
+        name="check_path_merged"
+        animation="@anim/_2130771984_res_0x7f010010"/>
+    <target
+        name="box_inner_merged"
+        animation="@anim/_2130771983_res_0x7f01000f"/>
+</animated-vector>

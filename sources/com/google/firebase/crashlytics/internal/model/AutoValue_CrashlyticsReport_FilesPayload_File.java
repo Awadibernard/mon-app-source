@@ -1,0 +1,97 @@
+package com.google.firebase.crashlytics.internal.model;
+
+import com.google.firebase.crashlytics.internal.model.CrashlyticsReport;
+import java.util.Arrays;
+
+/* JADX INFO: loaded from: classes2.dex */
+final class AutoValue_CrashlyticsReport_FilesPayload_File extends CrashlyticsReport.FilesPayload.File {
+    private final byte[] contents;
+    private final String filename;
+
+    private AutoValue_CrashlyticsReport_FilesPayload_File(String str, byte[] bArr) {
+        this.filename = str;
+        this.contents = bArr;
+    }
+
+    @Override // com.google.firebase.crashlytics.internal.model.CrashlyticsReport.FilesPayload.File
+    public final String getFilename() {
+        return this.filename;
+    }
+
+    @Override // com.google.firebase.crashlytics.internal.model.CrashlyticsReport.FilesPayload.File
+    public final byte[] getContents() {
+        return this.contents;
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("File{filename=");
+        sb.append(this.filename);
+        sb.append(", contents=");
+        sb.append(Arrays.toString(this.contents));
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof CrashlyticsReport.FilesPayload.File)) {
+            return false;
+        }
+        CrashlyticsReport.FilesPayload.File file = (CrashlyticsReport.FilesPayload.File) obj;
+        if (this.filename.equals(file.getFilename())) {
+            return Arrays.equals(this.contents, file instanceof AutoValue_CrashlyticsReport_FilesPayload_File ? ((AutoValue_CrashlyticsReport_FilesPayload_File) file).contents : file.getContents());
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(this.contents) ^ ((this.filename.hashCode() ^ 1000003) * 1000003);
+    }
+
+    static final class Builder extends CrashlyticsReport.FilesPayload.File.Builder {
+        private byte[] contents;
+        private String filename;
+
+        Builder() {
+        }
+
+        @Override // com.google.firebase.crashlytics.internal.model.CrashlyticsReport.FilesPayload.File.Builder
+        public final CrashlyticsReport.FilesPayload.File.Builder setFilename(String str) {
+            if (str == null) {
+                throw new NullPointerException("Null filename");
+            }
+            this.filename = str;
+            return this;
+        }
+
+        @Override // com.google.firebase.crashlytics.internal.model.CrashlyticsReport.FilesPayload.File.Builder
+        public final CrashlyticsReport.FilesPayload.File.Builder setContents(byte[] bArr) {
+            if (bArr == null) {
+                throw new NullPointerException("Null contents");
+            }
+            this.contents = bArr;
+            return this;
+        }
+
+        @Override // com.google.firebase.crashlytics.internal.model.CrashlyticsReport.FilesPayload.File.Builder
+        public final CrashlyticsReport.FilesPayload.File build() {
+            byte[] bArr;
+            String str = this.filename;
+            if (str == null || (bArr = this.contents) == null) {
+                StringBuilder sb = new StringBuilder();
+                if (this.filename == null) {
+                    sb.append(" filename");
+                }
+                if (this.contents == null) {
+                    sb.append(" contents");
+                }
+                StringBuilder sb2 = new StringBuilder("Missing required properties:");
+                sb2.append((Object) sb);
+                throw new IllegalStateException(sb2.toString());
+            }
+            return new AutoValue_CrashlyticsReport_FilesPayload_File(str, bArr);
+        }
+    }
+}

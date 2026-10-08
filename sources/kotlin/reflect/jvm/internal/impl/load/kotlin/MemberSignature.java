@@ -1,0 +1,101 @@
+package kotlin.reflect.jvm.internal.impl.load.kotlin;
+
+import kotlin.NoWhenBranchMatchedException;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver;
+import kotlin.reflect.jvm.internal.impl.metadata.jvm.JvmProtoBuf;
+import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmMemberSignature;
+
+/* JADX INFO: loaded from: classes3.dex */
+public final class MemberSignature {
+    public static final Companion Companion = new Companion(null);
+    private final String signature;
+
+    private MemberSignature(String str) {
+        this.signature = str;
+    }
+
+    public static final class Companion {
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final MemberSignature fromMethod(NameResolver nameResolver, JvmProtoBuf.JvmMethodSignature jvmMethodSignature) {
+            Intrinsics.checkNotNullParameter(nameResolver, "");
+            Intrinsics.checkNotNullParameter(jvmMethodSignature, "");
+            return fromMethodNameAndDesc(nameResolver.getString(jvmMethodSignature.getName()), nameResolver.getString(jvmMethodSignature.getDesc()));
+        }
+
+        @JvmStatic
+        public final MemberSignature fromMethodNameAndDesc(String str, String str2) {
+            Intrinsics.checkNotNullParameter(str, "");
+            Intrinsics.checkNotNullParameter(str2, "");
+            return new MemberSignature(Intrinsics.stringPlus(str, str2), null);
+        }
+
+        @JvmStatic
+        public final MemberSignature fromFieldNameAndDesc(String str, String str2) {
+            Intrinsics.checkNotNullParameter(str, "");
+            Intrinsics.checkNotNullParameter(str2, "");
+            StringBuilder sb = new StringBuilder();
+            sb.append(str);
+            sb.append('#');
+            sb.append(str2);
+            return new MemberSignature(sb.toString(), null);
+        }
+
+        @JvmStatic
+        public final MemberSignature fromJvmMemberSignature(JvmMemberSignature jvmMemberSignature) {
+            Intrinsics.checkNotNullParameter(jvmMemberSignature, "");
+            if (jvmMemberSignature instanceof JvmMemberSignature.Method) {
+                return fromMethodNameAndDesc(jvmMemberSignature.getName(), jvmMemberSignature.getDesc());
+            }
+            if (jvmMemberSignature instanceof JvmMemberSignature.Field) {
+                return fromFieldNameAndDesc(jvmMemberSignature.getName(), jvmMemberSignature.getDesc());
+            }
+            throw new NoWhenBranchMatchedException();
+        }
+
+        @JvmStatic
+        public final MemberSignature fromMethodSignatureAndParameterIndex(MemberSignature memberSignature, int i) {
+            Intrinsics.checkNotNullParameter(memberSignature, "");
+            StringBuilder sb = new StringBuilder();
+            sb.append(memberSignature.getSignature());
+            sb.append('@');
+            sb.append(i);
+            return new MemberSignature(sb.toString(), null);
+        }
+
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+    }
+
+    public final String getSignature() {
+        return this.signature;
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("MemberSignature(signature=");
+        sb.append(this.signature);
+        sb.append(')');
+        return sb.toString();
+    }
+
+    public final int hashCode() {
+        return this.signature.hashCode();
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof MemberSignature) && Intrinsics.areEqual(this.signature, ((MemberSignature) obj).signature);
+    }
+
+    public /* synthetic */ MemberSignature(String str, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str);
+    }
+}

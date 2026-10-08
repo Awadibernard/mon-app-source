@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="152"
+    versionName="2.0"
+    compileSdkVersion="36"
+    compileSdkVersionCodename="16"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="com.yas.selfcare.app"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        minSdkVersion="29"
+        targetSdkVersion="36"/>
+    <uses-permission name="android.permission.INTERNET"/>
+    <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission name="android.permission.READ_CONTACTS"/>
+    <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+        <package android:name="com.sec.android.app.samsungapps"/>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tel"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+    </queries>
+    <uses-permission name="android.permission.VIBRATE"/>
+    <uses-permission name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission name="android.permission.WAKE_LOCK"/>
+    <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-feature
+        glEsVersion="0x20000"
+        required="true"/>
+    <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission name="android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE"/>
+    <uses-permission name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <permission
+        name="com.yas.selfcare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        protectionLevel="0x2"/>
+    <uses-permission name="com.yas.selfcare.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application
+        theme="@style/_2131951852_res_0x7f1300ec"
+        label="Yas App"
+        android:icon="@mipmap/ic_launcher"
+        name="o.PersistableBundleApi22ImplKt"
+        allowBackup="false"
+        hardwareAccelerated="true"
+        largeHeap="true"
+        supportsRtl="true"
+        android:extractNativeLibs="false"
+        fullBackupContent="false"
+        usesCleartextTraffic="false"
+        appComponentFactory="androidx.core.app.CoreComponentFactory"
+        requestLegacyExternalStorage="true"
+        dataExtractionRules="@xml/_2132082691_res_0x7f150003"
+        enableOnBackInvokedCallback="true">
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_nBnWlKOarWlwBpkD9V5qZdefrtm3FGSx"/>
+        <meta-data
+            android:name="io.branch.sdk.BranchKey.test"
+            android:value="key_test_eFiZgHGav6bFxflq4I3wXhaoEyl5vRSU"/>
+        <meta-data
+            android:name="io.branch.sdk.TestMode"
+            android:value="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="862746116288989"/>
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="3247a93ebf6e7125bf10bc95da6450bb"/>
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false"/>
+        <meta-data
+            android:name="com.facebook.sdk.MonitorEnabled"
+            android:value="false"/>
+        <activity
+            theme="@style/_2131951852_res_0x7f1300ec"
+            android:name="com.axian.flutter.project.digitalselfcare.MainActivity"
+            android:exported="true"
+            launchMode="2"
+            screenOrientation="1"
+            configChanges="0x40003fb4"
+            windowSoftInputMode="0x10"
+            hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="@string/_2131886183_res_0x7f120067"/>
+                <data
+                    android:scheme="https"
+                    android:host="@string/_2131886182_res_0x7f120066"/>
+            </intent-filter>
+            <meta-data
+                android:name="io.flutter.embedding.android.NormalTheme"
+                resource="@style/_2131951877_res_0x7f130105"/>
+        </activity>
+        <activity
+            theme="@style/_2131952193_res_0x7f130241"
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:exported="false"
+            screenOrientation="1"/>
+        <activity android:name="com.qualtrics.digital.QualtricsSurveyActivity"/>
+        <activity
+            theme="@style/_2131951925_res_0x7f130135"
+            android:name="com.qualtrics.digital.QualtricsPopOverActivity"
+            configChanges="0x4b0"/>
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false"/>
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="true"/>
+        <meta-data
+            android:name="firebase_sessions_enabled"
+            android:value="false"/>
+        <service
+            name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            directBootAware="true">
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.firebaseremoteconfig.FlutterFirebaseAppRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            resource="@mipmap/ic_launcher"/>
+        <meta-data
+            android:name="io.flutter.embedding.android.NormalTheme"
+            resource="@style/_2131951877_res_0x7f130105"/>
+        <provider
+            name="o.setBufferFillPolicy"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.flutter.share_provider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132082693_res_0x7f150005"/>
+        </provider>
+        <receiver
+            name="o.TraceCompat"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <service
+            name="o.CursorWindowCompat"
+            enabled="true"
+            android:exported="false"
+            foregroundServiceType="0x8"/>
+        <provider
+            name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.flutter.image_provider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132082692_res_0x7f150004"/>
+        </provider>
+        <service
+            name="com.google.android.gms.metadata.ModuleDependencies"
+            enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data
+                name="a"
+                value=""/>
+        </service>
+        <activity
+            theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+            android:exported="false"/>
+        <provider
+            name="o.PersonApi22Impl"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.androidx-startup">
+            <meta-data
+                name="androidx.work.WorkManagerInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.emoji2.text.EmojiCompatInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.lifecycle.ProcessLifecycleInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.profileinstaller.ProfileInstallerInitializer"
+                value="androidx.startup"/>
+        </provider>
+        <service
+            name="o.allowPackage"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false"/>
+        <service
+            name="androidx.work.impl.background.systemjob.SystemJobService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false"/>
+        <service
+            name="o.mimeTypeAgainstFilter"
+            enabled="true"
+            android:exported="false"
+            directBootAware="false"/>
+        <receiver
+            name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            enabled="true"
+            android:exported="false"
+            directBootAware="false"/>
+        <receiver
+            name="o.allowExtra$asBinder"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="o.allowExtra$asInterface"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="o.allowExtra$onTransact"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="o.allowExtra$RemoteActionCompatParcelizer"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="o.allowExtraStream"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            permission="android.permission.DUMP"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true"/>
+        <service
+            name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <service
+            name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver
+            name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+            permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.flutterfirebasemessaginginitprovider"
+            initOrder="99"/>
+        <receiver
+            name="io.branch.receivers.SharingBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            theme="@style/_2131951625_res_0x7f130009"
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity"
+            android:exported="false"
+            configChanges="0x400035b4"/>
+        <activity
+            theme="@style/_2131952192_res_0x7f130240"
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity"
+            android:exported="false"/>
+        <activity
+            theme="@style/_2131952192_res_0x7f130240"
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity"
+            android:exported="false"/>
+        <activity
+            theme="@style/_2131952192_res_0x7f130240"
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+            android:exported="false"
+            launchMode="3"/>
+        <activity
+            theme="@style/_2131952192_res_0x7f130240"
+            android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+            android:exported="false"
+            launchMode="3"/>
+        <receiver
+            name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"
+            enabled="true"
+            android:exported="false"/>
+        <activity
+            theme="@style/_2131952403_res_0x7f130313"
+            android:name="com.facebook.FacebookActivity"
+            configChanges="0x5b0"/>
+        <activity android:name="kotlin.obtainEmptyRects"/>
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="fbconnect"
+                    android:host="cct.com.yas.selfcare.app"/>
+            </intent-filter>
+        </activity>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+            android:exported="true"
+            excludeFromRecents="true"
+            launchMode="2">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="genericidp"
+                    android:host="firebase.auth"
+                    android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+            android:exported="true"
+            excludeFromRecents="true"
+            launchMode="2">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="recaptcha"
+                    android:host="firebase.auth"
+                    android:path="/"/>
+            </intent-filter>
+        </activity>
+        <activity
+            theme="@style/_2131951925_res_0x7f130135"
+            android:name="com.qualtrics.digital.QualtricsEmbeddedFeedbackActivity"/>
+        <receiver
+            name="com.qualtrics.digital.QualtricsNotificationManager"
+            enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </receiver>
+        <uses-library
+            name="androidx.window.extensions"
+            required="false"/>
+        <uses-library
+            name="androidx.window.sidecar"
+            required="false"/>
+        <receiver
+            name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            enabled="true"
+            android:exported="false"/>
+        <service
+            name="com.google.android.gms.measurement.AppMeasurementService"
+            enabled="true"
+            android:exported="false"/>
+        <service
+            name="com.google.android.gms.measurement.AppMeasurementJobService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            enabled="true"
+            android:exported="false"/>
+        <uses-library
+            name="org.apache.http.legacy"
+            required="false"/>
+        <receiver
+            name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                name="a"
+                value=""/>
+        </receiver>
+        <service
+            name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            directBootAware="true">
+            <intent-filter priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            enabled="true"
+            android:exported="false">
+            <meta-data
+                name="a"
+                value=""/>
+        </service>
+        <activity
+            theme="@style/_2131952092_res_0x7f1301dc"
+            android:name="androidx.credentials.playservices.HiddenActivity"
+            enabled="true"
+            android:exported="false"
+            configChanges="0x5a0"
+            fitsSystemWindows="true"/>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            excludeFromRecents="true"/>
+        <service
+            name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            visibleToInstantApps="true"/>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.firebaseinitprovider"
+            initOrder="100"
+            directBootAware="true"/>
+        <provider
+            name="o.setColorFilter"
+            android:exported="false"
+            authorities="com.yas.selfcare.app.FacebookInitProvider"/>
+        <receiver
+            name="o.translationMatrixdefault"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="o.PaintCompat$onTransact"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library
+            name="android.ext.adservices"
+            required="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="12451000"/>
+        <service
+            name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                value="cct"/>
+        </service>
+        <service
+            name="o.ensureServiceBound"
+            android:exported="false"
+            directBootAware="true"/>
+        <receiver
+            name="androidx.profileinstaller.ProfileInstallReceiver"
+            permission="android.permission.DUMP"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <activity
+            theme="@style/_2131952142_res_0x7f13020e"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            stateNotNeeded="true"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2"/>
+    </application>
+</manifest>

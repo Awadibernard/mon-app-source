@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    textAppearance="@style/_2131951969_res_0x7f130161"
+    layout_width="-1"
+    layout_height="-2"
+    NOT_FOUND_0x3="@dimen/_2131165388_res_0x7f0700cc"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="1"
+    id="@+id/_2131362391_res_0x7f0a0257"
+    layout_width="-1"
+    layout_height="-2">
+    <LinearLayout
+        id="@+id/_2131362387_res_0x7f0a0253"
+        style="?attr/_2130969228_res_0x7f04028c">
+        <ImageView
+            id="@android:id/icon"
+            style="?attr/_2130969227_res_0x7f04028b"/>
+        <kotlin.getResources
+            id="@+id/_2131361872_res_0x7f0a0050"
+            style="?attr/_2130969229_res_0x7f04028d"/>
+    </LinearLayout>
+    <android.widget.Space
+        id="@+id/_2131362386_res_0x7f0a0252"
+        visibility="2"
+        layout_width="-1"
+        layout_height="8dp"/>
+</LinearLayout>

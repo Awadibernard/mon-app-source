@@ -1,0 +1,205 @@
+###### Class com.google.common.collect.AbstractMapEntry (com.google.common.collect.AbstractMapEntry)
+.class abstract Lcom/google/common/collect/AbstractMapEntry;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/util/Map$Entry;
+
+
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Map$Entry<",
+        "TK;TV;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .registers 1
+
+    .line 33
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 4
+
+    .line 52
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    if-eqz v0, :cond_24
+
+    .line 53
+    check-cast p1, Ljava/util/Map$Entry;
+
+    .line 54
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getKey()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_24
+
+    .line 55
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_24
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_24
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public abstract getKey()Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TK;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getValue()Ljava/lang/Object;
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TV;"
+        }
+    .end annotation
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 62
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getKey()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 63
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_d
+
+    move v0, v1
+
+    goto :goto_11
+
+    .line 64
+    :cond_d
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    :goto_11
+    if-eqz p0, :cond_17
+
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :cond_17
+    xor-int p0, v0, v1
+
+    return p0
+.end method
+
+.method public setValue(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation runtime Lcom/google/common/collect/ParametricNullness;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TV;)TV;"
+        }
+    .end annotation
+
+    .line 47
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 3
+
+    .line 70
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getKey()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, "="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapEntry;->getValue()Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

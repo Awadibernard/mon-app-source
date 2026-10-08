@@ -1,0 +1,97 @@
+###### Class com.google.firebase.auth.zzar (com.google.firebase.auth.zzar)
+.class public final Lcom/google/firebase/auth/zzar;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/firebase/auth/PlayGamesAuthCredential;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 15
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .registers 6
+
+    .line 2
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->validateObjectHeader(Landroid/os/Parcel;)I
+
+    move-result p0
+
+    const/4 v0, 0x0
+
+    .line 4
+    :goto_5
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    move-result v1
+
+    if-ge v1, p0, :cond_1f
+
+    .line 5
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->readHeader(Landroid/os/Parcel;)I
+
+    move-result v1
+
+    .line 6
+    invoke-static {v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->getFieldId(I)I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-eq v2, v3, :cond_1a
+
+    .line 10
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->skipUnknownField(Landroid/os/Parcel;I)V
+
+    goto :goto_5
+
+    .line 8
+    :cond_1a
+    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->createString(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_5
+
+    .line 12
+    :cond_1f
+    invoke-static {p1, p0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->ensureAtEnd(Landroid/os/Parcel;I)V
+
+    .line 13
+    new-instance p0, Lcom/google/firebase/auth/PlayGamesAuthCredential;
+
+    invoke-direct {p0, v0}, Lcom/google/firebase/auth/PlayGamesAuthCredential;-><init>(Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .registers 2
+
+    .line 18
+    new-array p0, p1, [Lcom/google/firebase/auth/PlayGamesAuthCredential;
+
+    return-object p0
+.end method

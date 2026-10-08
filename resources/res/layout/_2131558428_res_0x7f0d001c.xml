@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131361958_res_0x7f0a00a6"
+    focusable="true"
+    focusableInTouchMode="true"
+    clickable="true"
+    layout_width="-1"
+    layout_height="-1">
+    <com.pichillilorenzo.flutter_inappwebview_android.pull_to_refresh.PullToRefreshLayout
+        id="@+id/_2131362214_res_0x7f0a01a6"
+        layout_width="-1"
+        layout_height="-1">
+        <com.pichillilorenzo.flutter_inappwebview_android.webview.in_app_webview.InAppWebView
+            id="@+id/_2131362419_res_0x7f0a0273"
+            layout_width="-1"
+            layout_height="-1"/>
+    </com.pichillilorenzo.flutter_inappwebview_android.pull_to_refresh.PullToRefreshLayout>
+    <ProgressBar
+        id="@+id/_2131362210_res_0x7f0a01a2"
+        layout_width="-1"
+        layout_height="5dp"
+        max="100"
+        progress="0"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+</RelativeLayout>

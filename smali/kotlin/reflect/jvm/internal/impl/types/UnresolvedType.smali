@@ -1,0 +1,167 @@
+###### Class kotlin.reflect.jvm.internal.impl.types.UnresolvedType (kotlin.reflect.jvm.internal.impl.types.UnresolvedType)
+.class public final Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+.super Lkotlin/reflect/jvm/internal/impl/types/ErrorType;
+.source ""
+
+
+# instance fields
+.field private final presentableName:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Lkotlin/reflect/jvm/internal/impl/types/TypeConstructor;Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;Ljava/util/List;Z)V
+    .registers 15
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lkotlin/reflect/jvm/internal/impl/types/TypeConstructor;",
+            "Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;",
+            "Ljava/util/List<",
+            "+",
+            "Lkotlin/reflect/jvm/internal/impl/types/TypeProjection;",
+            ">;Z)V"
+        }
+    .end annotation
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p4, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x10
+
+    const/4 v8, 0x0
+
+    move-object v1, p0
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-object v4, p4
+
+    move v5, p5
+
+    .line 51
+    invoke-direct/range {v1 .. v8}, Lkotlin/reflect/jvm/internal/impl/types/ErrorType;-><init>(Lkotlin/reflect/jvm/internal/impl/types/TypeConstructor;Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;Ljava/util/List;ZLjava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 46
+    iput-object p1, p0, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;->presentableName:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getPresentableName()Ljava/lang/String;
+    .registers 1
+
+    .line 46
+    iget-object p0, p0, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;->presentableName:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+.method public final makeNullableAsSpecified(Z)Lkotlin/reflect/jvm/internal/impl/types/SimpleType;
+    .registers 9
+
+    .line 53
+    new-instance v6, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+
+    invoke-virtual {p0}, Lkotlin/reflect/jvm/internal/impl/types/ErrorType;->getPresentableName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lkotlin/reflect/jvm/internal/impl/types/KotlinType;->getConstructor()Lkotlin/reflect/jvm/internal/impl/types/TypeConstructor;
+
+    move-result-object v2
+
+    invoke-virtual {p0}, Lkotlin/reflect/jvm/internal/impl/types/KotlinType;->getMemberScope()Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;
+
+    move-result-object v3
+
+    invoke-virtual {p0}, Lkotlin/reflect/jvm/internal/impl/types/KotlinType;->getArguments()Ljava/util/List;
+
+    move-result-object v4
+
+    move-object v0, v6
+
+    move v5, p1
+
+    invoke-direct/range {v0 .. v5}, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;-><init>(Ljava/lang/String;Lkotlin/reflect/jvm/internal/impl/types/TypeConstructor;Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;Ljava/util/List;Z)V
+
+    check-cast v6, Lkotlin/reflect/jvm/internal/impl/types/SimpleType;
+
+    return-object v6
+.end method
+
+.method public final bridge synthetic makeNullableAsSpecified(Z)Lkotlin/reflect/jvm/internal/impl/types/UnwrappedType;
+    .registers 2
+
+    .line 45
+    invoke-virtual {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/SimpleType;->makeNullableAsSpecified(Z)Lkotlin/reflect/jvm/internal/impl/types/SimpleType;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/reflect/jvm/internal/impl/types/UnwrappedType;
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/ErrorType;
+    .registers 2
+
+    .line 45
+    invoke-virtual {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;->refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/reflect/jvm/internal/impl/types/ErrorType;
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/KotlinType;
+    .registers 2
+
+    .line 45
+    invoke-virtual {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;->refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/reflect/jvm/internal/impl/types/KotlinType;
+
+    return-object p0
+.end method
+
+.method public final refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+    .registers 3
+
+    .line 65354
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/UnwrappedType;
+    .registers 2
+
+    .line 45
+    invoke-virtual {p0, p1}, Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;->refine(Lkotlin/reflect/jvm/internal/impl/types/checker/KotlinTypeRefiner;)Lkotlin/reflect/jvm/internal/impl/types/UnresolvedType;
+
+    move-result-object p0
+
+    check-cast p0, Lkotlin/reflect/jvm/internal/impl/types/UnwrappedType;
+
+    return-object p0
+.end method

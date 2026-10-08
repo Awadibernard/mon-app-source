@@ -1,0 +1,39 @@
+###### Class com.google.android.gms.maps.zzr (com.google.android.gms.maps.zzr)
+.class final Lcom/google/android/gms/maps/zzr;
+.super Lcom/google/android/gms/maps/internal/zzbe;
+.source ""
+
+
+# instance fields
+.field final synthetic zza:Lcom/google/android/gms/maps/GoogleMap$OnPoiClickListener;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/maps/GoogleMap;Lcom/google/android/gms/maps/GoogleMap$OnPoiClickListener;)V
+    .registers 3
+
+    .line 1
+    iput-object p2, p0, Lcom/google/android/gms/maps/zzr;->zza:Lcom/google/android/gms/maps/GoogleMap$OnPoiClickListener;
+
+    invoke-direct {p0}, Lcom/google/android/gms/maps/internal/zzbe;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzb(Lcom/google/android/gms/maps/model/PointOfInterest;)V
+    .registers 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/maps/zzr;->zza:Lcom/google/android/gms/maps/GoogleMap$OnPoiClickListener;
+
+    invoke-interface {p0, p1}, Lcom/google/android/gms/maps/GoogleMap$OnPoiClickListener;->onPoiClick(Lcom/google/android/gms/maps/model/PointOfInterest;)V
+
+    return-void
+.end method

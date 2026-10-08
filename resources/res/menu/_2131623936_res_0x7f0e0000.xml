@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        id="@+id/_2131361855_res_0x7f0a003f"
+        orderInCategory="100"
+        title="Go Back"
+        onClick="goBackButtonClicked"
+        NOT_FOUND_0x5="0x0"/>
+    <item
+        id="@+id/_2131361856_res_0x7f0a0040"
+        orderInCategory="101"
+        title="Go Forward"
+        onClick="goForwardButtonClicked"
+        NOT_FOUND_0x5="0x0"/>
+    <item
+        id="@+id/_2131361864_res_0x7f0a0048"
+        orderInCategory="102"
+        title="Share"
+        onClick="shareButtonClicked"
+        NOT_FOUND_0x5="0x0"/>
+    <item
+        id="@+id/_2131361863_res_0x7f0a0047"
+        orderInCategory="103"
+        title="Reload"
+        onClick="reloadButtonClicked"
+        NOT_FOUND_0x5="0x0"/>
+    <item
+        id="@+id/_2131361851_res_0x7f0a003b"
+        orderInCategory="104"
+        title="Close"
+        onClick="closeButtonClicked"
+        NOT_FOUND_0x5="0x0"/>
+    <item
+        id="@+id/_2131362131_res_0x7f0a0153"
+        title="Search"
+        NOT_FOUND_0x4="android.widget.SearchView"
+        NOT_FOUND_0x5="0x5"/>
+</menu>

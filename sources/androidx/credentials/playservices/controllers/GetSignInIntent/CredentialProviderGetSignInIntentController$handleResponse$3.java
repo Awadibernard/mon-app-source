@@ -1,0 +1,49 @@
+package androidx.credentials.playservices.controllers.GetSignInIntent;
+
+import java.util.concurrent.Executor;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+import kotlin.setSupportBackgroundTintList;
+
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\b\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0001\u001a\u00020\u0000H\n¢\u0006\u0004\b\u0001\u0010\u0002"}, d2 = {"", "invoke", "()V"}, k = 3, mv = {1, 8, 0}, xi = 48)
+final class CredentialProviderGetSignInIntentController$handleResponse$3 extends Lambda implements Function0<Unit> {
+    final /* synthetic */ setSupportBackgroundTintList $response;
+    final /* synthetic */ CredentialProviderGetSignInIntentController this$0;
+
+    @Override // kotlin.jvm.functions.Function0
+    public final /* bridge */ /* synthetic */ Unit invoke() {
+        invoke2();
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2() {
+        Executor executor = this.this$0.getExecutor();
+        final CredentialProviderGetSignInIntentController credentialProviderGetSignInIntentController = this.this$0;
+        final setSupportBackgroundTintList setsupportbackgroundtintlist = this.$response;
+        executor.execute(new Runnable() { // from class: androidx.credentials.playservices.controllers.GetSignInIntent.CredentialProviderGetSignInIntentController$handleResponse$3$$ExternalSyntheticLambda0
+            @Override // java.lang.Runnable
+            public final void run() {
+                CredentialProviderGetSignInIntentController$handleResponse$3.invoke$lambda$0(credentialProviderGetSignInIntentController, setsupportbackgroundtintlist);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void invoke$lambda$0(CredentialProviderGetSignInIntentController credentialProviderGetSignInIntentController, setSupportBackgroundTintList setsupportbackgroundtintlist) {
+        Intrinsics.checkNotNullParameter(credentialProviderGetSignInIntentController, "");
+        Intrinsics.checkNotNullParameter(setsupportbackgroundtintlist, "");
+        credentialProviderGetSignInIntentController.getCallback();
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    CredentialProviderGetSignInIntentController$handleResponse$3(CredentialProviderGetSignInIntentController credentialProviderGetSignInIntentController, setSupportBackgroundTintList setsupportbackgroundtintlist) {
+        super(0);
+        this.this$0 = credentialProviderGetSignInIntentController;
+        this.$response = setsupportbackgroundtintlist;
+    }
+}

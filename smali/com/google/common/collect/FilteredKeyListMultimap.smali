@@ -1,0 +1,192 @@
+###### Class com.google.common.collect.FilteredKeyListMultimap (com.google.common.collect.FilteredKeyListMultimap)
+.class final Lcom/google/common/collect/FilteredKeyListMultimap;
+.super Lcom/google/common/collect/FilteredKeyMultimap;
+.source ""
+
+# interfaces
+.implements Lcom/google/common/collect/ListMultimap;
+
+
+# annotations
+.annotation runtime Lcom/google/common/collect/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/google/common/collect/FilteredKeyMultimap<",
+        "TK;TV;>;",
+        "Lcom/google/common/collect/ListMultimap<",
+        "TK;TV;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method constructor <init>(Lcom/google/common/collect/ListMultimap;Lcom/google/common/base/Predicate;)V
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/common/collect/ListMultimap<",
+            "TK;TV;>;",
+            "Lcom/google/common/base/Predicate<",
+            "-TK;>;)V"
+        }
+    .end annotation
+
+    .line 35
+    invoke-direct {p0, p1, p2}, Lcom/google/common/collect/FilteredKeyMultimap;-><init>(Lcom/google/common/collect/Multimap;Lcom/google/common/base/Predicate;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
+    .registers 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+
+    .line 30
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/FilteredKeyListMultimap;->get(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final get(Ljava/lang/Object;)Ljava/util/List;
+    .registers 2
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;)",
+            "Ljava/util/List<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 45
+    invoke-super {p0, p1}, Lcom/google/common/collect/FilteredKeyMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
+    .registers 2
+
+    .line 30
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/FilteredKeyListMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final removeAll(Ljava/lang/Object;)Ljava/util/List;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")",
+            "Ljava/util/List<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 50
+    invoke-super {p0, p1}, Lcom/google/common/collect/FilteredKeyMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
+    .registers 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+
+    .line 30
+    invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/FilteredKeyListMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/List;
+    .registers 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lcom/google/common/collect/ParametricNullness;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TK;",
+            "Ljava/lang/Iterable<",
+            "+TV;>;)",
+            "Ljava/util/List<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 55
+    invoke-super {p0, p1, p2}, Lcom/google/common/collect/FilteredKeyMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public final unfiltered()Lcom/google/common/collect/ListMultimap;
+    .registers 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/google/common/collect/ListMultimap<",
+            "TK;TV;>;"
+        }
+    .end annotation
+
+    .line 40
+    invoke-super {p0}, Lcom/google/common/collect/FilteredKeyMultimap;->unfiltered()Lcom/google/common/collect/Multimap;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/common/collect/ListMultimap;
+
+    return-object p0
+.end method
+
+.method public final bridge synthetic unfiltered()Lcom/google/common/collect/Multimap;
+    .registers 1
+
+    .line 30
+    invoke-virtual {p0}, Lcom/google/common/collect/FilteredKeyListMultimap;->unfiltered()Lcom/google/common/collect/ListMultimap;
+
+    move-result-object p0
+
+    return-object p0
+.end method

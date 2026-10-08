@@ -1,0 +1,218 @@
+###### Class androidx.core.view.ActionProvider (androidx.core.view.ActionProvider)
+.class public abstract Landroidx/core/view/ActionProvider;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/core/view/ActionProvider$SubUiVisibilityListener;,
+        Landroidx/core/view/ActionProvider$VisibilityListener;
+    }
+.end annotation
+
+
+# static fields
+.field private static final TAG:Ljava/lang/String; = "ActionProvider(support)"
+
+
+# instance fields
+.field private final mContext:Landroid/content/Context;
+
+.field private mSubUiVisibilityListener:Landroidx/core/view/ActionProvider$SubUiVisibilityListener;
+
+.field private mVisibilityListener:Landroidx/core/view/ActionProvider$VisibilityListener;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .registers 2
+
+    .line 135
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 136
+    iput-object p1, p0, Landroidx/core/view/ActionProvider;->mContext:Landroid/content/Context;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getContext()Landroid/content/Context;
+    .registers 1
+
+    .line 144
+    iget-object p0, p0, Landroidx/core/view/ActionProvider;->mContext:Landroid/content/Context;
+
+    return-object p0
+.end method
+
+.method public hasSubMenu()Z
+    .registers 1
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public isVisible()Z
+    .registers 1
+
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public abstract onCreateActionView()Landroid/view/View;
+.end method
+
+.method public onCreateActionView(Landroid/view/MenuItem;)Landroid/view/View;
+    .registers 2
+
+    .line 170
+    invoke-virtual {p0}, Landroidx/core/view/ActionProvider;->onCreateActionView()Landroid/view/View;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public onPerformDefaultAction()Z
+    .registers 1
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public onPrepareSubMenu(Landroid/view/SubMenu;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public overridesItemVisibility()Z
+    .registers 1
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method public refreshVisibility()V
+    .registers 2
+
+    .line 206
+    iget-object v0, p0, Landroidx/core/view/ActionProvider;->mVisibilityListener:Landroidx/core/view/ActionProvider$VisibilityListener;
+
+    if-eqz v0, :cond_13
+
+    invoke-virtual {p0}, Landroidx/core/view/ActionProvider;->overridesItemVisibility()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_13
+
+    .line 207
+    iget-object v0, p0, Landroidx/core/view/ActionProvider;->mVisibilityListener:Landroidx/core/view/ActionProvider$VisibilityListener;
+
+    invoke-virtual {p0}, Landroidx/core/view/ActionProvider;->isVisible()Z
+
+    move-result p0
+
+    invoke-interface {v0, p0}, Landroidx/core/view/ActionProvider$VisibilityListener;->onActionProviderVisibilityChanged(Z)V
+
+    :cond_13
+    return-void
+.end method
+
+.method public reset()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    .line 310
+    iput-object v0, p0, Landroidx/core/view/ActionProvider;->mVisibilityListener:Landroidx/core/view/ActionProvider$VisibilityListener;
+
+    .line 311
+    iput-object v0, p0, Landroidx/core/view/ActionProvider;->mSubUiVisibilityListener:Landroidx/core/view/ActionProvider$SubUiVisibilityListener;
+
+    return-void
+.end method
+
+.method public setSubUiVisibilityListener(Landroidx/core/view/ActionProvider$SubUiVisibilityListener;)V
+    .registers 2
+
+    .line 288
+    iput-object p1, p0, Landroidx/core/view/ActionProvider;->mSubUiVisibilityListener:Landroidx/core/view/ActionProvider$SubUiVisibilityListener;
+
+    return-void
+.end method
+
+.method public setVisibilityListener(Landroidx/core/view/ActionProvider$VisibilityListener;)V
+    .registers 2
+
+    .line 303
+    iput-object p1, p0, Landroidx/core/view/ActionProvider;->mVisibilityListener:Landroidx/core/view/ActionProvider$VisibilityListener;
+
+    return-void
+.end method
+
+.method public subUiVisibilityChanged(Z)V
+    .registers 2
+
+    .line 279
+    iget-object p0, p0, Landroidx/core/view/ActionProvider;->mSubUiVisibilityListener:Landroidx/core/view/ActionProvider$SubUiVisibilityListener;
+
+    if-eqz p0, :cond_7
+
+    .line 280
+    invoke-interface {p0, p1}, Landroidx/core/view/ActionProvider$SubUiVisibilityListener;->onSubUiVisibilityChanged(Z)V
+
+    :cond_7
+    return-void
+.end method
+
+###### Class androidx.core.view.ActionProvider.SubUiVisibilityListener (androidx.core.view.ActionProvider$SubUiVisibilityListener)
+.class public interface abstract Landroidx/core/view/ActionProvider$SubUiVisibilityListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/view/ActionProvider;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "SubUiVisibilityListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onSubUiVisibilityChanged(Z)V
+.end method
+
+###### Class androidx.core.view.ActionProvider.VisibilityListener (androidx.core.view.ActionProvider$VisibilityListener)
+.class public interface abstract Landroidx/core/view/ActionProvider$VisibilityListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/view/ActionProvider;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "VisibilityListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onActionProviderVisibilityChanged(Z)V
+.end method

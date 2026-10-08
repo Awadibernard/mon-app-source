@@ -1,0 +1,106 @@
+###### Class com.google.firebase.concurrent.PausableScheduledExecutorServiceImpl (com.google.firebase.concurrent.PausableScheduledExecutorServiceImpl)
+.class final Lcom/google/firebase/concurrent/PausableScheduledExecutorServiceImpl;
+.super Lcom/google/firebase/concurrent/DelegatingScheduledExecutorService;
+.source ""
+
+# interfaces
+.implements Lcom/google/firebase/concurrent/PausableScheduledExecutorService;
+
+
+# instance fields
+.field private final delegate:Lcom/google/firebase/concurrent/PausableExecutorService;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/firebase/concurrent/PausableExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+    .registers 3
+
+    .line 27
+    invoke-direct {p0, p1, p2}, Lcom/google/firebase/concurrent/DelegatingScheduledExecutorService;-><init>(Ljava/util/concurrent/ExecutorService;Ljava/util/concurrent/ScheduledExecutorService;)V
+
+    .line 28
+    iput-object p1, p0, Lcom/google/firebase/concurrent/PausableScheduledExecutorServiceImpl;->delegate:Lcom/google/firebase/concurrent/PausableExecutorService;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final isPaused()Z
+    .registers 1
+
+    .line 43
+    iget-object p0, p0, Lcom/google/firebase/concurrent/PausableScheduledExecutorServiceImpl;->delegate:Lcom/google/firebase/concurrent/PausableExecutorService;
+
+    invoke-interface {p0}, Lcom/google/firebase/concurrent/PausableExecutorService;->isPaused()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final pause()V
+    .registers 1
+
+    .line 33
+    iget-object p0, p0, Lcom/google/firebase/concurrent/PausableScheduledExecutorServiceImpl;->delegate:Lcom/google/firebase/concurrent/PausableExecutorService;
+
+    invoke-interface {p0}, Lcom/google/firebase/concurrent/PausableExecutorService;->pause()V
+
+    return-void
+.end method
+
+.method public final resume()V
+    .registers 1
+
+    .line 38
+    iget-object p0, p0, Lcom/google/firebase/concurrent/PausableScheduledExecutorServiceImpl;->delegate:Lcom/google/firebase/concurrent/PausableExecutorService;
+
+    invoke-interface {p0}, Lcom/google/firebase/concurrent/PausableExecutorService;->resume()V
+
+    return-void
+.end method
+
+.method public final scheduleAtFixedRate(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Runnable;",
+            "JJ",
+            "Ljava/util/concurrent/TimeUnit;",
+            ")",
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 51
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p0
+.end method
+
+.method public final scheduleWithFixedDelay(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+    .registers 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Runnable;",
+            "JJ",
+            "Ljava/util/concurrent/TimeUnit;",
+            ")",
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;"
+        }
+    .end annotation
+
+    .line 59
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p0
+.end method

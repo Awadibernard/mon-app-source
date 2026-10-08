@@ -1,0 +1,81 @@
+package kotlin;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface doOnDetach {
+    public static final isImportantForAccessibility AudioAttributesImplApi21Parcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplApi26Parcelizer;
+    public static final isImportantForAccessibility RemoteActionCompatParcelizer;
+    public static final isImportantForAccessibility asBinder;
+    public static final isImportantForAccessibility asInterface;
+    public static final isImportantForAccessibility onTransact;
+    public static final isImportantForAccessibility read;
+
+    static {
+        isImportantForAccessibility isimportantforaccessibility = new isImportantForAccessibility("1.2.840.10045");
+        isImportantForAccessibility isimportantforaccessibility2 = new isImportantForAccessibility(isimportantforaccessibility, "1");
+        new isImportantForAccessibility(isimportantforaccessibility2, "1");
+        isImportantForAccessibility isimportantforaccessibility3 = new isImportantForAccessibility(isimportantforaccessibility2, "2");
+        new isImportantForAccessibility(isimportantforaccessibility3, "3.1");
+        new isImportantForAccessibility(isimportantforaccessibility3, "3.2");
+        new isImportantForAccessibility(isimportantforaccessibility3, "3.3");
+        isImportantForAccessibility isimportantforaccessibility4 = new isImportantForAccessibility(isimportantforaccessibility, "4");
+        RemoteActionCompatParcelizer = new isImportantForAccessibility(isimportantforaccessibility4, "1");
+        new isImportantForAccessibility(new isImportantForAccessibility(isimportantforaccessibility, "2"), "1");
+        isImportantForAccessibility isimportantforaccessibility5 = new isImportantForAccessibility(isimportantforaccessibility4, "3");
+        onTransact = isimportantforaccessibility5;
+        read = new isImportantForAccessibility(isimportantforaccessibility5, "1");
+        asBinder = new isImportantForAccessibility(isimportantforaccessibility5, "2");
+        asInterface = new isImportantForAccessibility(isimportantforaccessibility5, "3");
+        AudioAttributesImplApi26Parcelizer = new isImportantForAccessibility(isimportantforaccessibility5, "4");
+        isImportantForAccessibility isimportantforaccessibility6 = new isImportantForAccessibility(isimportantforaccessibility, "3");
+        isImportantForAccessibility isimportantforaccessibility7 = new isImportantForAccessibility(isimportantforaccessibility6, "0");
+        new isImportantForAccessibility(isimportantforaccessibility7, "1");
+        new isImportantForAccessibility(isimportantforaccessibility7, "2");
+        new isImportantForAccessibility(isimportantforaccessibility7, "3");
+        new isImportantForAccessibility(isimportantforaccessibility7, "4");
+        new isImportantForAccessibility(isimportantforaccessibility7, "5");
+        new isImportantForAccessibility(isimportantforaccessibility7, "6");
+        new isImportantForAccessibility(isimportantforaccessibility7, "7");
+        new isImportantForAccessibility(isimportantforaccessibility7, "8");
+        new isImportantForAccessibility(isimportantforaccessibility7, "9");
+        new isImportantForAccessibility(isimportantforaccessibility7, "10");
+        new isImportantForAccessibility(isimportantforaccessibility7, "11");
+        new isImportantForAccessibility(isimportantforaccessibility7, "12");
+        new isImportantForAccessibility(isimportantforaccessibility7, "13");
+        new isImportantForAccessibility(isimportantforaccessibility7, "14");
+        new isImportantForAccessibility(isimportantforaccessibility7, "15");
+        new isImportantForAccessibility(isimportantforaccessibility7, "16");
+        new isImportantForAccessibility(isimportantforaccessibility7, "17");
+        new isImportantForAccessibility(isimportantforaccessibility7, "18");
+        new isImportantForAccessibility(isimportantforaccessibility7, "19");
+        new isImportantForAccessibility(isimportantforaccessibility7, "20");
+        isImportantForAccessibility isimportantforaccessibility8 = new isImportantForAccessibility(isimportantforaccessibility6, "1");
+        new isImportantForAccessibility(isimportantforaccessibility8, "1");
+        new isImportantForAccessibility(isimportantforaccessibility8, "2");
+        new isImportantForAccessibility(isimportantforaccessibility8, "3");
+        new isImportantForAccessibility(isimportantforaccessibility8, "4");
+        new isImportantForAccessibility(isimportantforaccessibility8, "5");
+        new isImportantForAccessibility(isimportantforaccessibility8, "6");
+        new isImportantForAccessibility(isimportantforaccessibility8, "7");
+        new isImportantForAccessibility("1.2.840.10040.4.1");
+        AudioAttributesImplApi21Parcelizer = new isImportantForAccessibility("1.2.840.10040.4.3");
+        isImportantForAccessibility isimportantforaccessibility9 = new isImportantForAccessibility("1.3.133.16.840.63.0");
+        new isImportantForAccessibility(isimportantforaccessibility9, "2");
+        new isImportantForAccessibility(isimportantforaccessibility9, "3");
+        new isImportantForAccessibility(isimportantforaccessibility9, "16");
+        isImportantForAccessibility isimportantforaccessibility10 = new isImportantForAccessibility("1.2.840.10046");
+        new isImportantForAccessibility(isimportantforaccessibility10, "2.1");
+        isImportantForAccessibility isimportantforaccessibility11 = new isImportantForAccessibility(isimportantforaccessibility10, "3");
+        new isImportantForAccessibility(isimportantforaccessibility11, "1");
+        new isImportantForAccessibility(isimportantforaccessibility11, "2");
+        new isImportantForAccessibility(isimportantforaccessibility11, "3");
+        new isImportantForAccessibility(isimportantforaccessibility11, "4");
+        new isImportantForAccessibility(isimportantforaccessibility11, "5");
+        new isImportantForAccessibility(isimportantforaccessibility11, "6");
+        new isImportantForAccessibility(isimportantforaccessibility11, "7");
+        new isImportantForAccessibility(isimportantforaccessibility11, "8");
+        isImportantForAccessibility isimportantforaccessibility12 = new isImportantForAccessibility(new isImportantForAccessibility("1.3.133.16.840.9.44"), "1");
+        new isImportantForAccessibility(isimportantforaccessibility12, "1");
+        new isImportantForAccessibility(isimportantforaccessibility12, "2");
+    }
+}

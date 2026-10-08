@@ -1,0 +1,15 @@
+###### Class com.google.longrunning.GetOperationRequestOrBuilder (com.google.longrunning.GetOperationRequestOrBuilder)
+.class public interface abstract Lcom/google/longrunning/GetOperationRequestOrBuilder;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getName()Ljava/lang/String;
+.end method
+
+.method public abstract getNameBytes()Lcom/google/protobuf/ByteString;
+.end method

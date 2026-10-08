@@ -1,0 +1,32 @@
+###### Class com.google.firebase.firestore.util.BiFunction (com.google.firebase.firestore.util.BiFunction)
+.class public interface abstract Lcom/google/firebase/firestore/util/BiFunction;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "U:",
+        "Ljava/lang/Object;",
+        "R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+.annotation runtime Ljava/lang/FunctionalInterface;
+.end annotation
+
+
+# virtual methods
+.method public abstract apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TU;)TR;"
+        }
+    .end annotation
+.end method

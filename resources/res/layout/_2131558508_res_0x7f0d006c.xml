@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="0x800005"
+    orientation="0"
+    id="@+id/_2131361972_res_0x7f0a00b4"
+    paddingRight="8dp"
+    layout_width="-1"
+    layout_height="52dp"
+    paddingEnd="8dp">
+    <Button
+        layout_gravity="0x10"
+        id="@+id/_2131361917_res_0x7f0a007d"
+        layout_width="-2"
+        layout_height="-2"
+        text="@android:string/cancel"
+        style="?attr/_2130968700_res_0x7f04007c"/>
+    <Button
+        layout_gravity="0x10"
+        id="@+id/_2131361955_res_0x7f0a00a3"
+        layout_width="-2"
+        layout_height="-2"
+        minWidth="64dp"
+        text="@android:string/ok"
+        style="?attr/_2130968702_res_0x7f04007e"/>
+</LinearLayout>

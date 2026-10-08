@@ -1,0 +1,36 @@
+###### Class io.flutter.plugin.platform.PlatformView (io.flutter.plugin.platform.PlatformView)
+.class public interface abstract Lio/flutter/plugin/platform/PlatformView;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract dispose()V
+.end method
+
+.method public abstract getView()Landroid/view/View;
+.end method
+
+.method public onFlutterViewAttached(Landroid/view/View;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public onFlutterViewDetached()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onInputConnectionLocked()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onInputConnectionUnlocked()V
+    .registers 1
+
+    return-void
+.end method

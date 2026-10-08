@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.ChipGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/_2131361931_res_0x7f0a008b"
+    layout_width="-1"
+    layout_height="-2"
+    layout_margin="16dp">
+    <com.google.android.material.chip.Chip
+        ellipsize="3"
+        id="@+id/_2131361928_res_0x7f0a0088"
+        layout_width="-2"
+        layout_height="-2"
+        text="Chip text"
+        style="@style/_2131952317_res_0x7f1302bd"/>
+    <com.google.android.material.chip.Chip
+        ellipsize="3"
+        id="@+id/_2131361929_res_0x7f0a0089"
+        layout_width="-2"
+        layout_height="-2"
+        text="Chip text"
+        style="@style/_2131952317_res_0x7f1302bd"/>
+    <com.google.android.material.chip.Chip
+        ellipsize="3"
+        id="@+id/_2131361930_res_0x7f0a008a"
+        layout_width="-2"
+        layout_height="-2"
+        text="Chip text"
+        style="@style/_2131952317_res_0x7f1302bd"/>
+</com.google.android.material.chip.ChipGroup>

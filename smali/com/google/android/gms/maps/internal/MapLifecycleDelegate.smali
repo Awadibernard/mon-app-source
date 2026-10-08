@@ -1,0 +1,12 @@
+###### Class com.google.android.gms.maps.internal.MapLifecycleDelegate (com.google.android.gms.maps.internal.MapLifecycleDelegate)
+.class public interface abstract Lcom/google/android/gms/maps/internal/MapLifecycleDelegate;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/dynamic/LifecycleDelegate;
+
+
+# virtual methods
+.method public abstract getMapAsync(Lcom/google/android/gms/maps/OnMapReadyCallback;)V
+.end method

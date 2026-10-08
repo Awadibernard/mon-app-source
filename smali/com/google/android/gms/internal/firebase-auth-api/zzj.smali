@@ -1,0 +1,62 @@
+###### Class com.google.android.gms.internal.p002firebaseauthapi.zzj (com.google.android.gms.internal.firebase-auth-api.zzj)
+.class final Lcom/google/android/gms/internal/firebase-auth-api/zzj;
+.super Lcom/google/android/gms/internal/firebase-auth-api/zzk;
+.source ""
+
+
+# static fields
+.field static final zza:Lcom/google/android/gms/internal/firebase-auth-api/zzf;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 5
+    new-instance v0, Lcom/google/android/gms/internal/firebase-auth-api/zzj;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/firebase-auth-api/zzj;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/firebase-auth-api/zzj;->zza:Lcom/google/android/gms/internal/firebase-auth-api/zzf;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 2
+
+    .line 6
+    const-string v0, "CharMatcher.none()"
+
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/firebase-auth-api/zzk;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zza(Ljava/lang/CharSequence;I)I
+    .registers 3
+
+    .line 1
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    move-result p0
+
+    .line 3
+    const-string p1, "index"
+
+    invoke-static {p2, p0, p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzu;->zza(IILjava/lang/String;)I
+
+    const/4 p0, -0x1
+
+    return p0
+.end method
+
+.method public final zza(C)Z
+    .registers 2
+
+    const/4 p0, 0x0
+
+    return p0
+.end method

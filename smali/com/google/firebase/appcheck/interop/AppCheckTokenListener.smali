@@ -1,0 +1,9 @@
+###### Class com.google.firebase.appcheck.interop.AppCheckTokenListener (com.google.firebase.appcheck.interop.AppCheckTokenListener)
+.class public interface abstract Lcom/google/firebase/appcheck/interop/AppCheckTokenListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract onAppCheckTokenChanged(Lcom/google/firebase/appcheck/AppCheckTokenResult;)V
+.end method

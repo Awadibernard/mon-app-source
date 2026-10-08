@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kotlin.getMenuInflater xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="1"
+    id="@+id/_2131361847_res_0x7f0a0037"
+    fitsSystemWindows="true"
+    layout_width="-1"
+    layout_height="-1">
+    <kotlin.setSupportProgressBarIndeterminateVisibility
+        id="@+id/_2131361861_res_0x7f0a0045"
+        layout="@layout/_2131558404_res_0x7f0d0004"
+        inflatedId="@+id/_2131361860_res_0x7f0a0044"
+        layout_width="-1"
+        layout_height="-2"/>
+    <include layout="@layout/_2131558420_res_0x7f0d0014"/>
+</kotlin.getMenuInflater>

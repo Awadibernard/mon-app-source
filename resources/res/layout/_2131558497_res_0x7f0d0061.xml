@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="0x1"
+    id="@+id/_2131362145_res_0x7f0a0161"
+    layout_width="-1"
+    layout_height="@dimen/_2131165449_res_0x7f070109"
+    horizontalSpacing="@dimen/_2131165462_res_0x7f070116"/>

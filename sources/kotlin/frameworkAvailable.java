@@ -1,0 +1,86 @@
+package kotlin;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface frameworkAvailable {
+    public static final isImportantForAccessibility AudioAttributesCompatParcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplApi21Parcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplApi26Parcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplBaseParcelizer;
+    public static final isImportantForAccessibility IconCompatParcelizer;
+    public static final isImportantForAccessibility MediaBrowserCompatCustomActionResultReceiver;
+    public static final isImportantForAccessibility MediaBrowserCompatMediaItem;
+    public static final isImportantForAccessibility MediaBrowserCompatSearchResultReceiver;
+    public static final isImportantForAccessibility RemoteActionCompatParcelizer;
+    public static final isImportantForAccessibility asBinder;
+    public static final isImportantForAccessibility asInterface;
+    public static final isImportantForAccessibility onTransact;
+    public static final isImportantForAccessibility read;
+    public static final isImportantForAccessibility write;
+
+    static {
+        isImportantForAccessibility isimportantforaccessibility = new isImportantForAccessibility("2.16.840.1.101.3.4");
+        isImportantForAccessibility isimportantforaccessibility2 = new isImportantForAccessibility(isimportantforaccessibility, "2");
+        asBinder = new isImportantForAccessibility(isimportantforaccessibility2, "1");
+        read = new isImportantForAccessibility(isimportantforaccessibility2, "2");
+        AudioAttributesCompatParcelizer = new isImportantForAccessibility(isimportantforaccessibility2, "3");
+        asInterface = new isImportantForAccessibility(isimportantforaccessibility2, "4");
+        AudioAttributesImplBaseParcelizer = new isImportantForAccessibility(isimportantforaccessibility2, "5");
+        MediaBrowserCompatMediaItem = new isImportantForAccessibility(isimportantforaccessibility2, "6");
+        AudioAttributesImplApi21Parcelizer = new isImportantForAccessibility(isimportantforaccessibility2, "7");
+        write = new isImportantForAccessibility(isimportantforaccessibility2, "8");
+        IconCompatParcelizer = new isImportantForAccessibility(isimportantforaccessibility2, "9");
+        AudioAttributesImplApi26Parcelizer = new isImportantForAccessibility(isimportantforaccessibility2, "10");
+        MediaBrowserCompatCustomActionResultReceiver = new isImportantForAccessibility(isimportantforaccessibility2, "11");
+        MediaBrowserCompatSearchResultReceiver = new isImportantForAccessibility(isimportantforaccessibility2, "12");
+        new isImportantForAccessibility(isimportantforaccessibility2, "13");
+        new isImportantForAccessibility(isimportantforaccessibility2, "14");
+        new isImportantForAccessibility(isimportantforaccessibility2, "15");
+        new isImportantForAccessibility(isimportantforaccessibility2, "16");
+        new isImportantForAccessibility(isimportantforaccessibility2, "17");
+        new isImportantForAccessibility(isimportantforaccessibility2, "18");
+        new isImportantForAccessibility(isimportantforaccessibility2, "19");
+        new isImportantForAccessibility(isimportantforaccessibility2, "20");
+        isImportantForAccessibility isimportantforaccessibility3 = new isImportantForAccessibility(isimportantforaccessibility, "1");
+        new isImportantForAccessibility(isimportantforaccessibility3, "1");
+        new isImportantForAccessibility(isimportantforaccessibility3, "2");
+        new isImportantForAccessibility(isimportantforaccessibility3, "3");
+        new isImportantForAccessibility(isimportantforaccessibility3, "4");
+        new isImportantForAccessibility(isimportantforaccessibility3, "5");
+        new isImportantForAccessibility(isimportantforaccessibility3, "6");
+        new isImportantForAccessibility(isimportantforaccessibility3, "7");
+        new isImportantForAccessibility(isimportantforaccessibility3, "8");
+        new isImportantForAccessibility(isimportantforaccessibility3, "21");
+        new isImportantForAccessibility(isimportantforaccessibility3, "22");
+        new isImportantForAccessibility(isimportantforaccessibility3, "23");
+        new isImportantForAccessibility(isimportantforaccessibility3, "24");
+        new isImportantForAccessibility(isimportantforaccessibility3, "25");
+        new isImportantForAccessibility(isimportantforaccessibility3, "26");
+        new isImportantForAccessibility(isimportantforaccessibility3, "27");
+        new isImportantForAccessibility(isimportantforaccessibility3, "28");
+        new isImportantForAccessibility(isimportantforaccessibility3, "41");
+        new isImportantForAccessibility(isimportantforaccessibility3, "42");
+        new isImportantForAccessibility(isimportantforaccessibility3, "43");
+        new isImportantForAccessibility(isimportantforaccessibility3, "44");
+        new isImportantForAccessibility(isimportantforaccessibility3, "45");
+        new isImportantForAccessibility(isimportantforaccessibility3, "46");
+        new isImportantForAccessibility(isimportantforaccessibility3, "47");
+        new isImportantForAccessibility(isimportantforaccessibility3, "48");
+        isImportantForAccessibility isimportantforaccessibility4 = new isImportantForAccessibility(isimportantforaccessibility, "3");
+        onTransact = new isImportantForAccessibility(isimportantforaccessibility4, "1");
+        RemoteActionCompatParcelizer = new isImportantForAccessibility(isimportantforaccessibility4, "2");
+        new isImportantForAccessibility(isimportantforaccessibility4, "3");
+        new isImportantForAccessibility(isimportantforaccessibility4, "4");
+        new isImportantForAccessibility(isimportantforaccessibility4, "5");
+        new isImportantForAccessibility(isimportantforaccessibility4, "6");
+        new isImportantForAccessibility(isimportantforaccessibility4, "7");
+        new isImportantForAccessibility(isimportantforaccessibility4, "8");
+        new isImportantForAccessibility(isimportantforaccessibility4, "9");
+        new isImportantForAccessibility(isimportantforaccessibility4, "10");
+        new isImportantForAccessibility(isimportantforaccessibility4, "11");
+        new isImportantForAccessibility(isimportantforaccessibility4, "12");
+        new isImportantForAccessibility(isimportantforaccessibility4, "13");
+        new isImportantForAccessibility(isimportantforaccessibility4, "14");
+        new isImportantForAccessibility(isimportantforaccessibility4, "15");
+        new isImportantForAccessibility(isimportantforaccessibility4, "16");
+    }
+}

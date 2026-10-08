@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <kotlin.closeOptionsMenu
+        id="@+id/_2131361845_res_0x7f0a0035"
+        layout_width="-1"
+        layout_height="-1"
+        foreground="?android:attr/windowContentOverlay"
+        foregroundGravity="0x37"/>
+</merge>

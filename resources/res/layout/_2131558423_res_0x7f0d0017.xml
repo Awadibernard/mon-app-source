@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kotlin.removeCancellable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131361975_res_0x7f0a00b7"
+    fitsSystemWindows="true"
+    layout_width="-1"
+    layout_height="-1">
+    <include layout="@layout/_2131558420_res_0x7f0d0014"/>
+    <kotlin.handleOnBackProgressed
+        gravity="0x30"
+        id="@+id/_2131361846_res_0x7f0a0036"
+        layout_width="-1"
+        layout_height="-2"
+        layout_alignParentTop="true"
+        touchscreenBlocksFocus="true"
+        keyboardNavigationCluster="true"
+        style="?attr/_2130968583_res_0x7f040007">
+        <kotlin.onTitleChanged
+            id="@+id/_2131361844_res_0x7f0a0034"
+            layout_width="-1"
+            layout_height="-2"
+            NOT_FOUND_0xa="@string/_2131886081_res_0x7f120001"
+            style="?attr/_2130969627_res_0x7f04041b"/>
+        <kotlin.setEnabledChangedCallbackactivity_release
+            theme="?attr/_2130968607_res_0x7f04001f"
+            id="@+id/_2131361853_res_0x7f0a003d"
+            visibility="2"
+            layout_width="-1"
+            layout_height="-2"
+            style="?attr/_2130968606_res_0x7f04001e"/>
+    </kotlin.handleOnBackProgressed>
+</kotlin.removeCancellable>

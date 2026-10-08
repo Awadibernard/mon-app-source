@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    layout_width="-2"
+    layout_height="-2">
+    <RadioButton
+        id="@+id/_2131362363_res_0x7f0a023b"
+        background="?android:attr/colorBackground"
+        layout_width="-2"
+        layout_height="-2"
+        buttonTint="@color/_2131099900_res_0x7f0600fc"/>
+    <RadioButton
+        id="@+id/_2131362364_res_0x7f0a023c"
+        background="?android:attr/colorBackground"
+        layout_width="-2"
+        layout_height="-2"
+        NOT_FOUND_0x5="@color/_2131099900_res_0x7f0600fc"/>
+</LinearLayout>

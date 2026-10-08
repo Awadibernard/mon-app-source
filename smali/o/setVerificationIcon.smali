@@ -1,0 +1,37 @@
+###### Class kotlin.setVerificationIcon (o.setVerificationIcon)
+.class final Lo/setVerificationIcon;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final RemoteActionCompatParcelizer:I
+
+.field public final asBinder:I
+
+.field public final asInterface:I
+
+.field public final read:I
+
+
+# direct methods
+.method public constructor <init>(IIII)V
+    .registers 5
+
+    .line 25
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 26
+    iput p1, p0, Lo/setVerificationIcon;->asBinder:I
+
+    .line 27
+    iput p2, p0, Lo/setVerificationIcon;->RemoteActionCompatParcelizer:I
+
+    .line 28
+    iput p3, p0, Lo/setVerificationIcon;->asInterface:I
+
+    .line 29
+    iput p4, p0, Lo/setVerificationIcon;->read:I
+
+    return-void
+.end method

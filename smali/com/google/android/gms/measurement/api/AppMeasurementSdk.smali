@@ -1,0 +1,514 @@
+###### Class com.google.android.gms.measurement.api.AppMeasurementSdk (com.google.android.gms.measurement.api.AppMeasurementSdk)
+.class public Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/gms/measurement/api/AppMeasurementSdk$ConditionalUserProperty;,
+        Lcom/google/android/gms/measurement/api/AppMeasurementSdk$EventInterceptor;,
+        Lcom/google/android/gms/measurement/api/AppMeasurementSdk$OnEventListener;
+    }
+.end annotation
+
+
+# instance fields
+.field private final zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/internal/measurement/zzfb;)V
+    .registers 2
+
+    .line 65354
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    return-void
+.end method
+
+.method public static getInstance(Landroid/content/Context;)Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+    .registers 2
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p0, v0}, Lcom/google/android/gms/internal/measurement/zzfb;->zza(Landroid/content/Context;Landroid/os/Bundle;)Lcom/google/android/gms/internal/measurement/zzfb;
+
+    move-result-object p0
+
+    .line 2
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzb()Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static getInstance(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+    .registers 5
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 3
+    invoke-static {p0, p4}, Lcom/google/android/gms/internal/measurement/zzfb;->zza(Landroid/content/Context;Landroid/os/Bundle;)Lcom/google/android/gms/internal/measurement/zzfb;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzb()Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public beginAdUnitExposure(Ljava/lang/String;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzu(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public clearConditionalUserProperty(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    .registers 4
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zzfb;->zzm(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public endAdUnitExposure(Ljava/lang/String;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzv(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public generateEventId()J
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzz()J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public getAppIdOrigin()Ljava/lang/String;
+    .registers 1
+
+    .line 65353
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzI()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getAppInstanceId()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzy()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getConditionalUserProperties(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/List<",
+            "Landroid/os/Bundle;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/internal/measurement/zzfb;->zzn(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getCurrentScreenClass()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzB()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getCurrentScreenName()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzA()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getGmpAppId()Ljava/lang/String;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzx()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public getMaxUserProperties(Ljava/lang/String;)I
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzF(Ljava/lang/String;)I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public getUserProperties(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Z)",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zzfb;->zzC(Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/Map;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public logEvent(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    .registers 4
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zzfb;->zzi(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public logEventNoInterceptor(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+    .registers 12
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move-wide v4, p4
+
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/gms/internal/measurement/zzfb;->zzj(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+
+    return-void
+.end method
+
+.method public performAction(Landroid/os/Bundle;)V
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzE(Landroid/os/Bundle;Z)Landroid/os/Bundle;
+
+    return-void
+.end method
+
+.method public performActionWithResponse(Landroid/os/Bundle;)Landroid/os/Bundle;
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, p1, v0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzE(Landroid/os/Bundle;Z)Landroid/os/Bundle;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public registerOnMeasurementEventListener(Lcom/google/android/gms/measurement/api/AppMeasurementSdk$OnEventListener;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzf(Lcom/google/android/gms/measurement/internal/zzjq;)V
+
+    return-void
+.end method
+
+.method public setConditionalUserProperty(Landroid/os/Bundle;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzl(Landroid/os/Bundle;)V
+
+    return-void
+.end method
+
+.method public setConsent(Landroid/os/Bundle;)V
+    .registers 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    return-void
+.end method
+
+.method public setCurrentScreen(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    .registers 4
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-static {p1}, Lcom/google/android/gms/internal/measurement/zzdf;->zza(Landroid/app/Activity;)Lcom/google/android/gms/internal/measurement/zzdf;
+
+    move-result-object p1
+
+    .line 2
+    invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zzfb;->zzp(Lcom/google/android/gms/internal/measurement/zzdf;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public setEventInterceptor(Lcom/google/android/gms/measurement/api/AppMeasurementSdk$EventInterceptor;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzd(Lcom/google/android/gms/measurement/internal/zzjp;)V
+
+    return-void
+.end method
+
+.method public setMeasurementEnabled(Ljava/lang/Boolean;)V
+    .registers 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    return-void
+.end method
+
+.method public setMeasurementEnabled(Z)V
+    .registers 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    return-void
+.end method
+
+.method public setUserProperty(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
+    .registers 5
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/android/gms/internal/measurement/zzfb;->zzk(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Z)V
+
+    return-void
+.end method
+
+.method public unregisterOnMeasurementEventListener(Lcom/google/android/gms/measurement/api/AppMeasurementSdk$OnEventListener;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzg(Lcom/google/android/gms/measurement/internal/zzjq;)V
+
+    return-void
+.end method
+
+.method public final zza(Z)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/measurement/api/AppMeasurementSdk;->zza:Lcom/google/android/gms/internal/measurement/zzfb;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/measurement/zzfb;->zzK(Z)V
+
+    return-void
+.end method
+
+###### Class com.google.android.gms.measurement.api.AppMeasurementSdk.ConditionalUserProperty (com.google.android.gms.measurement.api.AppMeasurementSdk$ConditionalUserProperty)
+.class public final Lcom/google/android/gms/measurement/api/AppMeasurementSdk$ConditionalUserProperty;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "ConditionalUserProperty"
+.end annotation
+
+
+# static fields
+.field public static final ACTIVE:Ljava/lang/String; = "active"
+
+.field public static final CREATION_TIMESTAMP:Ljava/lang/String; = "creation_timestamp"
+
+.field public static final EXPIRED_EVENT_NAME:Ljava/lang/String; = "expired_event_name"
+
+.field public static final EXPIRED_EVENT_PARAMS:Ljava/lang/String; = "expired_event_params"
+
+.field public static final NAME:Ljava/lang/String; = "name"
+
+.field public static final ORIGIN:Ljava/lang/String; = "origin"
+
+.field public static final TIMED_OUT_EVENT_NAME:Ljava/lang/String; = "timed_out_event_name"
+
+.field public static final TIMED_OUT_EVENT_PARAMS:Ljava/lang/String; = "timed_out_event_params"
+
+.field public static final TIME_TO_LIVE:Ljava/lang/String; = "time_to_live"
+
+.field public static final TRIGGERED_EVENT_NAME:Ljava/lang/String; = "triggered_event_name"
+
+.field public static final TRIGGERED_EVENT_PARAMS:Ljava/lang/String; = "triggered_event_params"
+
+.field public static final TRIGGERED_TIMESTAMP:Ljava/lang/String; = "triggered_timestamp"
+
+.field public static final TRIGGER_EVENT_NAME:Ljava/lang/String; = "trigger_event_name"
+
+.field public static final TRIGGER_TIMEOUT:Ljava/lang/String; = "trigger_timeout"
+
+.field public static final VALUE:Ljava/lang/String; = "value"
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 65354
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+###### Class com.google.android.gms.measurement.api.AppMeasurementSdk.EventInterceptor (com.google.android.gms.measurement.api.AppMeasurementSdk$EventInterceptor)
+.class public interface abstract Lcom/google/android/gms/measurement/api/AppMeasurementSdk$EventInterceptor;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/measurement/internal/zzjp;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "EventInterceptor"
+.end annotation
+
+
+# virtual methods
+.method public abstract interceptEvent(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+.end method
+
+###### Class com.google.android.gms.measurement.api.AppMeasurementSdk.OnEventListener (com.google.android.gms.measurement.api.AppMeasurementSdk$OnEventListener)
+.class public interface abstract Lcom/google/android/gms/measurement/api/AppMeasurementSdk$OnEventListener;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/android/gms/measurement/internal/zzjq;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/gms/measurement/api/AppMeasurementSdk;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "OnEventListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onEvent(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+.end method

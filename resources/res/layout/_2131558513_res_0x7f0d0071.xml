@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    gravity="0x800053"
+    layout_gravity="0x800033"
+    id="@+id/_2131362158_res_0x7f0a016e"
+    paddingBottom="0dp"
+    layout_width="-1"
+    layout_height="-2"
+    NOT_FOUND_0x6="@dimen/_2131165471_res_0x7f07011f"
+    NOT_FOUND_0x7="@dimen/_2131165456_res_0x7f070110"
+    style="?attr/_2130969239_res_0x7f040297"/>

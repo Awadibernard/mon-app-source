@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    orientation="0"
+    id="@+id/_2131362137_res_0x7f0a0159"
+    paddingTop="4dp"
+    paddingBottom="4dp"
+    layout_width="-1"
+    layout_height="-2">
+    <FrameLayout
+        layout_width="0dp"
+        layout_height="-1"
+        layout_weight="1">
+        <com.google.android.material.button.MaterialButton
+            gravity="0x800013"
+            layout_gravity="0x800003"
+            id="@+id/_2131362138_res_0x7f0a015a"
+            layout_width="-2"
+            layout_height="48dp"
+            insetTop="0dp"
+            insetBottom="0dp"
+            NOT_FOUND_0xc="@drawable/_2131230907_res_0x7f0800bb"
+            NOT_FOUND_0xd="0x4"
+            NOT_FOUND_0xe="4dp"
+            style="?attr/_2130969246_res_0x7f04029e"/>
+    </FrameLayout>
+    <com.google.android.material.button.MaterialButton
+        gravity="0x11"
+        id="@+id/_2131362140_res_0x7f0a015c"
+        layout_width="48dp"
+        layout_height="48dp"
+        insetTop="0dp"
+        insetBottom="0dp"
+        contentDescription="@string/_2131886250_res_0x7f1200aa"
+        NOT_FOUND_0xc="@drawable/_2131230905_res_0x7f0800b9"
+        style="?attr/_2130969243_res_0x7f04029b"/>
+    <com.google.android.material.button.MaterialButton
+        gravity="0x11"
+        id="@+id/_2131362139_res_0x7f0a015b"
+        layout_width="48dp"
+        layout_height="48dp"
+        insetTop="0dp"
+        insetBottom="0dp"
+        contentDescription="@string/_2131886249_res_0x7f1200a9"
+        NOT_FOUND_0xc="@drawable/_2131230904_res_0x7f0800b8"
+        style="?attr/_2130969243_res_0x7f04029b"/>
+</LinearLayout>

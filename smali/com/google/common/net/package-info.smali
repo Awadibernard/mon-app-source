@@ -1,0 +1,9 @@
+###### Class com.google.common.net.package-info (com.google.common.net.package-info)
+.class interface abstract synthetic Lcom/google/common/net/package-info;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lcom/google/errorprone/annotations/CheckReturnValue;
+.end annotation

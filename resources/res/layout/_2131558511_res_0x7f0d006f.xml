@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="-1"
+    layout_height="120dp">
+    <LinearLayout
+        layout_gravity="0x30"
+        orientation="0"
+        id="@+id/_2131362157_res_0x7f0a016d"
+        paddingLeft="@dimen/_2131165451_res_0x7f07010b"
+        paddingRight="@dimen/_2131165451_res_0x7f07010b"
+        layout_width="-1"
+        layout_height="120dp"
+        baselineAligned="false"
+        paddingStart="@dimen/_2131165451_res_0x7f07010b"
+        paddingEnd="@dimen/_2131165451_res_0x7f07010b"
+        style="?attr/_2130969238_res_0x7f040296">
+        <FrameLayout
+            id="@+id/_2131362159_res_0x7f0a016f"
+            paddingLeft="12dp"
+            layout_width="0dp"
+            layout_height="-1"
+            layout_weight="1"
+            paddingStart="12dp">
+            <include layout="@layout/_2131558514_res_0x7f0d0072"/>
+            <include layout="@layout/_2131558513_res_0x7f0d0071"/>
+        </FrameLayout>
+        <include layout="@layout/_2131558515_res_0x7f0d0073"/>
+    </LinearLayout>
+    <View
+        layout_gravity="0x50"
+        layout_width="-1"
+        layout_height="1dp"
+        style="?attr/_2130969237_res_0x7f040295"/>
+</merge>

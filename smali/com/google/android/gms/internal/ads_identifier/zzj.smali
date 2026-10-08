@@ -1,0 +1,4 @@
+###### Class com.google.android.gms.internal.ads_identifier.zzj (com.google.android.gms.internal.ads_identifier.zzj)
+.class public interface abstract Lcom/google/android/gms/internal/ads_identifier/zzj;
+.super Ljava/lang/Object;
+.source ""

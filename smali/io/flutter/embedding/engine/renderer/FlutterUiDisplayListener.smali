@@ -1,0 +1,12 @@
+###### Class io.flutter.embedding.engine.renderer.FlutterUiDisplayListener (io.flutter.embedding.engine.renderer.FlutterUiDisplayListener)
+.class public interface abstract Lio/flutter/embedding/engine/renderer/FlutterUiDisplayListener;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract onFlutterUiDisplayed()V
+.end method
+
+.method public abstract onFlutterUiNoLongerDisplayed()V
+.end method

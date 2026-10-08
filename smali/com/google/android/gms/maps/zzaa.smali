@@ -1,0 +1,34 @@
+###### Class com.google.android.gms.maps.zzaa (com.google.android.gms.maps.zzaa)
+.class final Lcom/google/android/gms/maps/zzaa;
+.super Lcom/google/android/gms/maps/internal/zzaq;
+.source ""
+
+
+# instance fields
+.field final synthetic zza:Lcom/google/android/gms/maps/GoogleMap$OnMapLongClickListener;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/maps/GoogleMap;Lcom/google/android/gms/maps/GoogleMap$OnMapLongClickListener;)V
+    .registers 3
+
+    .line 1
+    iput-object p2, p0, Lcom/google/android/gms/maps/zzaa;->zza:Lcom/google/android/gms/maps/GoogleMap$OnMapLongClickListener;
+
+    invoke-direct {p0}, Lcom/google/android/gms/maps/internal/zzaq;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzb(Lcom/google/android/gms/maps/model/LatLng;)V
+    .registers 2
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/maps/zzaa;->zza:Lcom/google/android/gms/maps/GoogleMap$OnMapLongClickListener;
+
+    invoke-interface {p0, p1}, Lcom/google/android/gms/maps/GoogleMap$OnMapLongClickListener;->onMapLongClick(Lcom/google/android/gms/maps/model/LatLng;)V
+
+    return-void
+.end method

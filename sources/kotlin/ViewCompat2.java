@@ -1,0 +1,88 @@
+package kotlin;
+
+/* JADX INFO: loaded from: classes4.dex */
+public interface ViewCompat2 {
+    public static final isImportantForAccessibility AudioAttributesCompatParcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplApi21Parcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplApi26Parcelizer;
+    public static final isImportantForAccessibility AudioAttributesImplBaseParcelizer;
+    public static final isImportantForAccessibility IconCompatParcelizer;
+    public static final isImportantForAccessibility MediaBrowserCompatCustomActionResultReceiver;
+    public static final isImportantForAccessibility MediaBrowserCompatItemReceiver;
+    public static final isImportantForAccessibility MediaBrowserCompatMediaItem;
+    public static final isImportantForAccessibility MediaBrowserCompatSearchResultReceiver;
+    public static final isImportantForAccessibility MediaControllerCompatMediaControllerImplApi21ExtraBinderRequestResultReceiver;
+    public static final isImportantForAccessibility MediaDescriptionCompat;
+    public static final isImportantForAccessibility MediaMetadataCompat;
+    public static final isImportantForAccessibility MediaSessionCompatQueueItem;
+    public static final isImportantForAccessibility MediaSessionCompatResultReceiverWrapper;
+    public static final isImportantForAccessibility MediaSessionCompatToken;
+    public static final isImportantForAccessibility ParcelableVolumeInfo;
+    public static final isImportantForAccessibility PlaybackStateCompat;
+    public static final isImportantForAccessibility PlaybackStateCompatCustomAction;
+    public static final isImportantForAccessibility RatingCompat;
+    public static final isImportantForAccessibility RemoteActionCompatParcelizer;
+    public static final isImportantForAccessibility asBinder;
+    public static final isImportantForAccessibility asInterface;
+    public static final isImportantForAccessibility onTransact;
+    public static final isImportantForAccessibility r8lambdah6vvr6zUWA2U1fE0KsKpOgpr28;
+    public static final isImportantForAccessibility read;
+    public static final isImportantForAccessibility write;
+
+    static {
+        isImportantForAccessibility isimportantforaccessibility = new isImportantForAccessibility("1.3.6.1.4.1.22554");
+        isImportantForAccessibility isimportantforaccessibility2 = new isImportantForAccessibility(isimportantforaccessibility, "1");
+        isImportantForAccessibility isimportantforaccessibility3 = new isImportantForAccessibility(isimportantforaccessibility2, "1");
+        isImportantForAccessibility isimportantforaccessibility4 = new isImportantForAccessibility(isimportantforaccessibility2, "2.1");
+        new isImportantForAccessibility(isimportantforaccessibility2, "2.2");
+        new isImportantForAccessibility(isimportantforaccessibility2, "2.3");
+        new isImportantForAccessibility(isimportantforaccessibility2, "2.4");
+        new isImportantForAccessibility(isimportantforaccessibility3, "1");
+        isImportantForAccessibility isimportantforaccessibility5 = new isImportantForAccessibility(isimportantforaccessibility3, "2");
+        new isImportantForAccessibility(isimportantforaccessibility4, "1");
+        isImportantForAccessibility isimportantforaccessibility6 = new isImportantForAccessibility(isimportantforaccessibility4, "2");
+        new isImportantForAccessibility(isimportantforaccessibility5, "1.2");
+        new isImportantForAccessibility(isimportantforaccessibility5, "1.22");
+        new isImportantForAccessibility(isimportantforaccessibility5, "1.42");
+        new isImportantForAccessibility(isimportantforaccessibility6, "1.2");
+        new isImportantForAccessibility(isimportantforaccessibility6, "1.22");
+        new isImportantForAccessibility(isimportantforaccessibility6, "1.42");
+        isImportantForAccessibility isimportantforaccessibility7 = new isImportantForAccessibility(isimportantforaccessibility, "2");
+        isImportantForAccessibility isimportantforaccessibility8 = new isImportantForAccessibility(isimportantforaccessibility7, "1");
+        onTransact = isimportantforaccessibility8;
+        write = new isImportantForAccessibility(isimportantforaccessibility8, "1");
+        AudioAttributesImplApi26Parcelizer = new isImportantForAccessibility(isimportantforaccessibility8, "2");
+        IconCompatParcelizer = new isImportantForAccessibility(isimportantforaccessibility8, "3");
+        isImportantForAccessibility isimportantforaccessibility9 = new isImportantForAccessibility(isimportantforaccessibility7, "2");
+        AudioAttributesCompatParcelizer = isimportantforaccessibility9;
+        MediaBrowserCompatItemReceiver = new isImportantForAccessibility(isimportantforaccessibility9, "1");
+        MediaBrowserCompatMediaItem = new isImportantForAccessibility(isimportantforaccessibility9, "2");
+        AudioAttributesImplBaseParcelizer = new isImportantForAccessibility(isimportantforaccessibility9, "3");
+        MediaDescriptionCompat = new isImportantForAccessibility(isimportantforaccessibility9, "4");
+        AudioAttributesImplApi21Parcelizer = new isImportantForAccessibility(isimportantforaccessibility9, "5");
+        MediaBrowserCompatCustomActionResultReceiver = new isImportantForAccessibility(isimportantforaccessibility9, "6");
+        MediaBrowserCompatSearchResultReceiver = new isImportantForAccessibility(isimportantforaccessibility9, "7");
+        MediaMetadataCompat = new isImportantForAccessibility(isimportantforaccessibility9, "8");
+        isImportantForAccessibility isimportantforaccessibility10 = new isImportantForAccessibility(isimportantforaccessibility7, "3");
+        RatingCompat = isimportantforaccessibility10;
+        MediaControllerCompatMediaControllerImplApi21ExtraBinderRequestResultReceiver = new isImportantForAccessibility(isimportantforaccessibility10, "1");
+        ParcelableVolumeInfo = new isImportantForAccessibility(isimportantforaccessibility10, "2");
+        PlaybackStateCompatCustomAction = new isImportantForAccessibility(isimportantforaccessibility10, "3");
+        r8lambdah6vvr6zUWA2U1fE0KsKpOgpr28 = new isImportantForAccessibility(isimportantforaccessibility10, "4");
+        MediaSessionCompatQueueItem = new isImportantForAccessibility(isimportantforaccessibility10, "5");
+        PlaybackStateCompat = new isImportantForAccessibility(isimportantforaccessibility10, "6");
+        MediaSessionCompatToken = new isImportantForAccessibility(isimportantforaccessibility10, "7");
+        MediaSessionCompatResultReceiverWrapper = new isImportantForAccessibility(isimportantforaccessibility10, "8");
+        isImportantForAccessibility isimportantforaccessibility11 = new isImportantForAccessibility(isimportantforaccessibility7, "4");
+        asInterface = isimportantforaccessibility11;
+        new isImportantForAccessibility(isimportantforaccessibility11, "1");
+        new isImportantForAccessibility(isimportantforaccessibility11, "2");
+        new isImportantForAccessibility(isimportantforaccessibility11, "3");
+        new isImportantForAccessibility(isimportantforaccessibility11, "4");
+        new isImportantForAccessibility(isimportantforaccessibility11, "5");
+        read = new isImportantForAccessibility(isimportantforaccessibility11, "11");
+        asBinder = new isImportantForAccessibility(isimportantforaccessibility11, "12");
+        RemoteActionCompatParcelizer = new isImportantForAccessibility(new isImportantForAccessibility(isimportantforaccessibility, "3"), "1");
+        new isImportantForAccessibility(new isImportantForAccessibility(isimportantforaccessibility, "4"), "1");
+    }
+}

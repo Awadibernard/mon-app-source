@@ -1,0 +1,86 @@
+###### Class com.google.android.gms.common.api.internal.LifecycleActivity (com.google.android.gms.common.api.internal.LifecycleActivity)
+.class public Lcom/google/android/gms/common/api/internal/LifecycleActivity;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field private final zza:Ljava/lang/Object;
+
+
+# direct methods
+.method public constructor <init>(Landroid/app/Activity;)V
+    .registers 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string v0, "Activity must not be null"
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/ContextWrapper;)V
+    .registers 2
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    new-instance p0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final zza()Z
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza:Ljava/lang/Object;
+
+    instance-of p0, p0, Lo/verifyDrawable;
+
+    return p0
+.end method
+
+.method public final zzb()Z
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza:Ljava/lang/Object;
+
+    instance-of p0, p0, Landroid/app/Activity;
+
+    return p0
+.end method
+
+.method public final zzc()Landroid/app/Activity;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza:Ljava/lang/Object;
+
+    check-cast p0, Landroid/app/Activity;
+
+    return-object p0
+.end method
+
+.method public final zzd()Lo/verifyDrawable;
+    .registers 1
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/common/api/internal/LifecycleActivity;->zza:Ljava/lang/Object;
+
+    check-cast p0, Lo/verifyDrawable;
+
+    return-object p0
+.end method

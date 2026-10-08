@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButtonToggleGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    orientation="1"
+    id="@+id/_2131362115_res_0x7f0a0143"
+    background="?attr/_2130968823_res_0x7f0400f7"
+    visibility="2"
+    layout_width="52dp"
+    layout_height="96dp"
+    contentDescription="@string/_2131886224_res_0x7f120090"
+    layout_marginStart="12dp"
+    NOT_FOUND_0xb="@+id/_2131362113_res_0x7f0a0141"
+    NOT_FOUND_0xc="@+id/_2131362110_res_0x7f0a013e"
+    NOT_FOUND_0xd="0"
+    NOT_FOUND_0xe="true"
+    NOT_FOUND_0x10="true">
+    <com.google.android.material.button.MaterialButton
+        id="@+id/_2131362113_res_0x7f0a0141"
+        layout_width="-2"
+        text="@string/_2131886236_res_0x7f12009c"
+        insetTop="8dp"
+        NOT_FOUND_0xf="?attr/_2130969432_res_0x7f040358"
+        style="?attr/_2130969230_res_0x7f04028e"/>
+    <com.google.android.material.button.MaterialButton
+        id="@+id/_2131362114_res_0x7f0a0142"
+        layout_width="-2"
+        text="@string/_2131886240_res_0x7f1200a0"
+        insetBottom="8dp"
+        NOT_FOUND_0xf="?attr/_2130969432_res_0x7f040358"
+        style="?attr/_2130969230_res_0x7f04028e"/>
+</com.google.android.material.button.MaterialButtonToggleGroup>

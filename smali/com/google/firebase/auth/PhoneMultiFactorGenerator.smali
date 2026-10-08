@@ -1,0 +1,33 @@
+###### Class com.google.firebase.auth.PhoneMultiFactorGenerator (com.google.firebase.auth.PhoneMultiFactorGenerator)
+.class public Lcom/google/firebase/auth/PhoneMultiFactorGenerator;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final FACTOR_ID:Ljava/lang/String; = "phone"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static getAssertion(Lcom/google/firebase/auth/PhoneAuthCredential;)Lcom/google/firebase/auth/PhoneMultiFactorAssertion;
+    .registers 2
+
+    .line 1
+    invoke-static {p0}, Lcom/google/android/gms/common/internal/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    new-instance v0, Lcom/google/firebase/auth/PhoneMultiFactorAssertion;
+
+    invoke-direct {v0, p0}, Lcom/google/firebase/auth/PhoneMultiFactorAssertion;-><init>(Lcom/google/firebase/auth/PhoneAuthCredential;)V
+
+    return-object v0
+.end method

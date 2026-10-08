@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="0x10"
+    orientation="1"
+    paddingLeft="24dp"
+    paddingRight="24dp"
+    layout_width="-1"
+    layout_height="-2">
+    <TextView
+        textSize="20sp"
+        textColor="#212121"
+        gravity="0x10"
+        id="@+id/_2131362027_res_0x7f0a00eb"
+        paddingTop="24dp"
+        paddingBottom="20dp"
+        layout_width="-2"
+        layout_height="-2"
+        textIsSelectable="false"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+    <TextView
+        textSize="16sp"
+        textStyle="0x0"
+        textColor="#757575"
+        id="@+id/_2131362039_res_0x7f0a00f7"
+        paddingBottom="28dp"
+        layout_width="-2"
+        layout_height="-2"
+        textIsSelectable="false"/>
+</LinearLayout>

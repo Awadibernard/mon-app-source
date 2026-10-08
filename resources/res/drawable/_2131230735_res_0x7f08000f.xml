@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        state_checked="true"
+        id="@+id/_2131361926_res_0x7f0a0086"
+        drawable="@drawable/_2131230816_res_0x7f080060"/>
+    <item
+        id="@+id/_2131362402_res_0x7f0a0262"
+        drawable="@drawable/_2131230818_res_0x7f080062"/>
+    <transition
+        drawable="@drawable/_2131230819_res_0x7f080063"
+        toId="@+id/_2131361926_res_0x7f0a0086"
+        fromId="@+id/_2131362402_res_0x7f0a0262"/>
+    <transition
+        drawable="@drawable/_2131230817_res_0x7f080061"
+        toId="@+id/_2131362402_res_0x7f0a0262"
+        fromId="@+id/_2131361926_res_0x7f0a0086"/>
+</animated-selector>

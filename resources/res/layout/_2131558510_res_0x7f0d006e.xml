@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="0x1"
+    orientation="1"
+    id="@+id/_2131362156_res_0x7f0a016c"
+    layout_width="-1"
+    layout_height="-1">
+    <include layout="@layout/_2131558512_res_0x7f0d0070"/>
+    <FrameLayout
+        id="@+id/_2131362146_res_0x7f0a0162"
+        paddingLeft="12dp"
+        paddingRight="12dp"
+        layout_width="-1"
+        layout_height="-2"
+        paddingStart="12dp"
+        paddingEnd="12dp"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+###### Class com.google.android.gms.internal.p001authapiphone.zzg (com.google.android.gms.internal.auth-api-phone.zzg)
+.class public interface abstract Lcom/google/android/gms/internal/auth-api-phone/zzg;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# virtual methods
+.method public abstract zzb(Lcom/google/android/gms/common/api/Status;Z)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method

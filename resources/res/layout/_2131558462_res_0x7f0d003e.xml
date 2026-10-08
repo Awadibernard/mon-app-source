@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    textColor="#000"
+    background="?android:attr/selectableItemBackground"
+    paddingTop="16dp"
+    paddingBottom="16dp"
+    layout_width="-2"
+    layout_height="-2"
+    paddingStart="12dp"
+    paddingEnd="12dp"/>

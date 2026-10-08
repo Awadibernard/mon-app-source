@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="_2130903040_res_0x7f030000">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="_2130903043_res_0x7f030003">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="_2130903045_res_0x7f030005">
+        <item>@id/_2131362224_res_0x7f0a01b0</item>
+        <item>@id/_2131362227_res_0x7f0a01b3</item>
+        <item>@id/_2131362228_res_0x7f0a01b4</item>
+        <item>@id/_2131362229_res_0x7f0a01b5</item>
+        <item>@id/_2131362230_res_0x7f0a01b6</item>
+        <item>@id/_2131362231_res_0x7f0a01b7</item>
+        <item>@id/_2131362232_res_0x7f0a01b8</item>
+        <item>@id/_2131362233_res_0x7f0a01b9</item>
+        <item>@id/_2131362234_res_0x7f0a01ba</item>
+        <item>@id/_2131362225_res_0x7f0a01b1</item>
+        <item>@id/_2131362226_res_0x7f0a01b2</item>
+    </array>
+</resources>

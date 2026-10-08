@@ -1,0 +1,119 @@
+###### Class com.appsflyer.internal.AFj1oSDK (com.appsflyer.internal.AFj1oSDK)
+.class public interface abstract Lcom/appsflyer/internal/AFj1oSDK;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0002\n\u0002\u0008\u0004\u0008f\u0018\u0000 \n2\u00020\u0001:\u0001\nJ\u001b\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0002H\'\u00a2\u0006\u0004\u0008\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H&\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\u000f\u0010\t\u001a\u00020\u0006H&\u00a2\u0006\u0004\u0008\t\u0010\u0008"
+    }
+    d2 = {
+        "Lcom/appsflyer/internal/AFj1oSDK;",
+        "",
+        "",
+        "",
+        "AFAdRevenueData",
+        "()Ljava/util/Map;",
+        "",
+        "getMonetizationNetwork",
+        "()V",
+        "getMediationNetwork",
+        "AFa1ySDK"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final AFa1ySDK:Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 65354
+    sget-object v0, Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;->getMonetizationNetwork:Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+    sput-object v0, Lcom/appsflyer/internal/AFj1oSDK;->AFa1ySDK:Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract AFAdRevenueData()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getMediationNetwork()V
+.end method
+
+.method public abstract getMonetizationNetwork()V
+.end method
+
+###### Class com.appsflyer.internal.AFj1oSDK.Companion (com.appsflyer.internal.AFj1oSDK$AFa1ySDK)
+.class public final Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/appsflyer/internal/AFj1oSDK;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "AFa1ySDK"
+.end annotation
+
+
+# static fields
+.field static final synthetic getMonetizationNetwork:Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 65354
+    new-instance v0, Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+    invoke-direct {v0}, Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;-><init>()V
+
+    sput-object v0, Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;->getMonetizationNetwork:Lcom/appsflyer/internal/AFj1oSDK$AFa1ySDK;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

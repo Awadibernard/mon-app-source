@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_2131951852_res_0x7f1300ec" parent="@style/_2131952084_res_0x7f1301d4">
+        <item name="android:windowBackground">@drawable/_2131230898_res_0x7f0800b2</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="_2131951877_res_0x7f130105" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+    </style>
+    <style name="_2131952066_res_0x7f1301c2" parent="@style/_2131952064_res_0x7f1301c0">
+    </style>
+    <style name="_2131952067_res_0x7f1301c3" parent="@style/_2131952064_res_0x7f1301c0">
+    </style>
+    <style name="_2131952068_res_0x7f1301c4" parent="@style/_2131952073_res_0x7f1301c9">
+    </style>
+    <style name="_2131952069_res_0x7f1301c5" parent="@style/_2131952074_res_0x7f1301ca">
+    </style>
+    <style name="_2131952070_res_0x7f1301c6" parent="@style/_2131952075_res_0x7f1301cb">
+    </style>
+    <style name="_2131952071_res_0x7f1301c7" parent="@style/_2131952076_res_0x7f1301cc">
+    </style>
+    <style name="_2131952072_res_0x7f1301c8" parent="@style/_2131952085_res_0x7f1301d5">
+    </style>
+    <style name="_2131952097_res_0x7f1301e1" parent="@style/_2131952093_res_0x7f1301dd">
+    </style>
+    <style name="_2131952098_res_0x7f1301e2" parent="@style/_2131952094_res_0x7f1301de">
+    </style>
+    <style name="_2131952099_res_0x7f1301e3" parent="@style/_2131952095_res_0x7f1301df">
+    </style>
+    <style name="_2131952100_res_0x7f1301e4" parent="@style/_2131952093_res_0x7f1301dd">
+    </style>
+    <style name="_2131952101_res_0x7f1301e5" parent="@style/_2131952095_res_0x7f1301df">
+    </style>
+    <style name="_2131952102_res_0x7f1301e6" parent="@style/_2131952113_res_0x7f1301f1">
+    </style>
+    <style name="_2131952103_res_0x7f1301e7" parent="@style/_2131952114_res_0x7f1301f2">
+    </style>
+    <style name="_2131952104_res_0x7f1301e8" parent="@style/_2131952115_res_0x7f1301f3">
+    </style>
+    <style name="_2131952105_res_0x7f1301e9" parent="@style/_2131952116_res_0x7f1301f4">
+    </style>
+    <style name="_2131952106_res_0x7f1301ea" parent="@style/_2131952117_res_0x7f1301f5">
+    </style>
+    <style name="_2131952107_res_0x7f1301eb" parent="@style/_2131952118_res_0x7f1301f6">
+    </style>
+    <style name="_2131952108_res_0x7f1301ec" parent="@style/_2131952119_res_0x7f1301f7">
+    </style>
+    <style name="_2131952109_res_0x7f1301ed" parent="@style/_2131952120_res_0x7f1301f8">
+    </style>
+    <style name="_2131952110_res_0x7f1301ee" parent="@style/_2131952121_res_0x7f1301f9">
+    </style>
+    <style name="_2131952111_res_0x7f1301ef" parent="@style/_2131952140_res_0x7f13020c">
+    </style>
+    <style name="_2131952112_res_0x7f1301f0" parent="@style/_2131952141_res_0x7f13020d">
+    </style>
+    <style name="_2131952147_res_0x7f130213" parent="@style/_2131952145_res_0x7f130211">
+    </style>
+    <style name="_2131952281_res_0x7f130299" parent="@style/_2131952283_res_0x7f13029b">
+    </style>
+    <style name="_2131952285_res_0x7f13029d" parent="@style/_2131952286_res_0x7f13029e">
+    </style>
+    <style name="_2131952294_res_0x7f1302a6" parent="@style/_2131952292_res_0x7f1302a4">
+    </style>
+    <style name="_2131952297_res_0x7f1302a9" parent="@style/_2131952295_res_0x7f1302a7">
+    </style>
+    <style name="_2131952359_res_0x7f1302e7" parent="@style/_2131952355_res_0x7f1302e3">
+    </style>
+    <style name="_2131952373_res_0x7f1302f5" parent="@style/_2131952371_res_0x7f1302f3">
+    </style>
+    <style name="_2131952396_res_0x7f13030c" parent="@style/_2131952397_res_0x7f13030d">
+    </style>
+</resources>

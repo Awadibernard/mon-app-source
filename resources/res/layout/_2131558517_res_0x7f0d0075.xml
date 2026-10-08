@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="0"
+    paddingLeft="12dp"
+    paddingTop="16dp"
+    paddingRight="12dp"
+    paddingBottom="16dp"
+    layout_width="-1"
+    layout_height="-2">
+    <com.google.android.material.textfield.TextInputLayout
+        id="@+id/_2131362163_res_0x7f0a0173"
+        layout_width="-1"
+        layout_height="-2"
+        layout_weight="1">
+        <com.google.android.material.textfield.TextInputEditText
+            layout_width="-1"
+            layout_height="-2"
+            hint="@string/_2131886272_res_0x7f1200c0"
+            inputType="0x14"
+            imeOptions="0x10000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Space
+        layout_width="8dp"
+        layout_height="0dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        id="@+id/_2131362162_res_0x7f0a0172"
+        layout_width="-1"
+        layout_height="-2"
+        layout_weight="1">
+        <com.google.android.material.textfield.TextInputEditText
+            layout_width="-1"
+            layout_height="-2"
+            hint="@string/_2131886271_res_0x7f1200bf"
+            inputType="0x14"
+            imeOptions="0x10000000"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

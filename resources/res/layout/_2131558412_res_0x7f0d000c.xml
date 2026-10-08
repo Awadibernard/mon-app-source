@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kotlin.getMenuInflater xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="1"
+    fitsSystemWindows="true"
+    layout_width="-1"
+    layout_height="-1">
+    <TextView
+        ellipsize="3"
+        layout_gravity="0x800003"
+        id="@+id/_2131362385_res_0x7f0a0251"
+        paddingLeft="?attr/_2130968913_res_0x7f040151"
+        paddingTop="18dp"
+        paddingRight="?attr/_2130968913_res_0x7f040151"
+        layout_width="-1"
+        layout_height="-2"
+        singleLine="true"
+        textAlignment="5"
+        style="?android:attr/windowTitleStyle"/>
+    <include
+        layout_width="-1"
+        layout_height="-2"
+        layout_weight="1"
+        layout="@layout/_2131558420_res_0x7f0d0014"/>
+</kotlin.getMenuInflater>

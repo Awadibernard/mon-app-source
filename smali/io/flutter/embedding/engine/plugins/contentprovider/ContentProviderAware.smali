@@ -1,0 +1,12 @@
+###### Class io.flutter.embedding.engine.plugins.contentprovider.ContentProviderAware (io.flutter.embedding.engine.plugins.contentprovider.ContentProviderAware)
+.class public interface abstract Lio/flutter/embedding/engine/plugins/contentprovider/ContentProviderAware;
+.super Ljava/lang/Object;
+.source ""
+
+
+# virtual methods
+.method public abstract onAttachedToContentProvider(Lio/flutter/embedding/engine/plugins/contentprovider/ContentProviderPluginBinding;)V
+.end method
+
+.method public abstract onDetachedFromContentProvider()V
+.end method

@@ -1,0 +1,32 @@
+###### Class com.google.android.gms.internal.ads_identifier.zzb (com.google.android.gms.internal.ads_identifier.zzb)
+.class public Lcom/google/android/gms/internal/ads_identifier/zzb;
+.super Landroid/os/Binder;
+.source ""
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# virtual methods
+.method public final asBinder()Landroid/os/IBinder;
+    .registers 1
+
+    const/4 p0, 0x0
+
+    .line 65354
+    throw p0
+.end method
+
+.method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    .registers 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    const/4 p0, 0x0
+
+    .line 65353
+    throw p0
+.end method

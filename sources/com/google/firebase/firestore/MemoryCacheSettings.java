@@ -1,0 +1,56 @@
+package com.google.firebase.firestore;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class MemoryCacheSettings implements LocalCacheSettings {
+    private MemoryGarbageCollectorSettings gcSettings;
+
+    public static Builder newBuilder() {
+        return new Builder();
+    }
+
+    private MemoryCacheSettings(MemoryGarbageCollectorSettings memoryGarbageCollectorSettings) {
+        this.gcSettings = memoryGarbageCollectorSettings;
+    }
+
+    public final int hashCode() {
+        return this.gcSettings.hashCode();
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        return getGarbageCollectorSettings().equals(((MemoryCacheSettings) obj).getGarbageCollectorSettings());
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("MemoryCacheSettings{gcSettings=");
+        sb.append(getGarbageCollectorSettings());
+        sb.append("}");
+        return sb.toString();
+    }
+
+    public final MemoryGarbageCollectorSettings getGarbageCollectorSettings() {
+        return this.gcSettings;
+    }
+
+    public static class Builder {
+        private MemoryGarbageCollectorSettings gcSettings;
+
+        private Builder() {
+            this.gcSettings = MemoryEagerGcSettings.newBuilder().build();
+        }
+
+        public MemoryCacheSettings build() {
+            return new MemoryCacheSettings(this.gcSettings);
+        }
+
+        public Builder setGcSettings(MemoryGarbageCollectorSettings memoryGarbageCollectorSettings) {
+            this.gcSettings = memoryGarbageCollectorSettings;
+            return this;
+        }
+    }
+}

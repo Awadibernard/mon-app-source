@@ -1,0 +1,170 @@
+package com.google.zxing.common.detector;
+
+import com.google.zxing.NotFoundException;
+import com.google.zxing.ResultPoint;
+import com.google.zxing.common.BitMatrix;
+
+/* JADX INFO: loaded from: classes3.dex */
+@Deprecated
+public final class MonochromeRectangleDetector {
+    private static final int MAX_MODULES = 32;
+    private final BitMatrix image;
+
+    public MonochromeRectangleDetector(BitMatrix bitMatrix) {
+        this.image = bitMatrix;
+    }
+
+    public final ResultPoint[] detect() throws NotFoundException {
+        int height = this.image.getHeight();
+        int width = this.image.getWidth();
+        int i = height / 2;
+        int i2 = width / 2;
+        int iMax = Math.max(1, height / 256);
+        int iMax2 = Math.max(1, width / 256);
+        int i3 = -iMax;
+        int i4 = i2 / 2;
+        int y = ((int) findCornerFromCenter(i2, 0, 0, width, i, i3, 0, height, i4).getY()) - 1;
+        int i5 = i / 2;
+        ResultPoint resultPointFindCornerFromCenter = findCornerFromCenter(i2, -iMax2, 0, width, i, 0, y, height, i5);
+        int x = ((int) resultPointFindCornerFromCenter.getX()) - 1;
+        ResultPoint resultPointFindCornerFromCenter2 = findCornerFromCenter(i2, iMax2, x, width, i, 0, y, height, i5);
+        int x2 = ((int) resultPointFindCornerFromCenter2.getX()) + 1;
+        ResultPoint resultPointFindCornerFromCenter3 = findCornerFromCenter(i2, 0, x, x2, i, iMax, y, height, i4);
+        return new ResultPoint[]{findCornerFromCenter(i2, 0, x, x2, i, i3, y, ((int) resultPointFindCornerFromCenter3.getY()) + 1, i2 / 4), resultPointFindCornerFromCenter, resultPointFindCornerFromCenter2, resultPointFindCornerFromCenter3};
+    }
+
+    private ResultPoint findCornerFromCenter(int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) throws NotFoundException {
+        int[] iArrBlackWhiteRange;
+        int[] iArr = null;
+        int i10 = i;
+        int i11 = i5;
+        while (i11 < i8 && i11 >= i7 && i10 < i4 && i10 >= i3) {
+            if (i2 == 0) {
+                iArrBlackWhiteRange = blackWhiteRange(i11, i9, i3, i4, true);
+            } else {
+                iArrBlackWhiteRange = blackWhiteRange(i10, i9, i7, i8, false);
+            }
+            if (iArrBlackWhiteRange == null) {
+                if (iArr == null) {
+                    throw NotFoundException.getNotFoundInstance();
+                }
+                if (i2 == 0) {
+                    int i12 = i11 - i6;
+                    int i13 = iArr[0];
+                    if (i13 < i) {
+                        if (iArr[1] > i) {
+                            return new ResultPoint(iArr[i6 <= 0 ? (char) 1 : (char) 0], i12);
+                        }
+                        return new ResultPoint(i13, i12);
+                    }
+                    return new ResultPoint(iArr[1], i12);
+                }
+                int i14 = i10 - i2;
+                int i15 = iArr[0];
+                if (i15 < i5) {
+                    if (iArr[1] > i5) {
+                        return new ResultPoint(i14, iArr[i2 >= 0 ? (char) 1 : (char) 0]);
+                    }
+                    return new ResultPoint(i14, i15);
+                }
+                return new ResultPoint(i14, iArr[1]);
+            }
+            i11 += i6;
+            i10 += i2;
+            iArr = iArrBlackWhiteRange;
+        }
+        throw NotFoundException.getNotFoundInstance();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0020  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x0056  */
+    /* JADX WARN: Removed duplicated region for block: B:68:0x0031 A[EDGE_INSN: B:68:0x0031->B:22:0x0031 BREAK  A[LOOP:1: B:13:0x001c->B:71:0x001c], SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:84:0x0067 A[EDGE_INSN: B:84:0x0067->B:46:0x0067 BREAK  A[LOOP:3: B:37:0x0052->B:89:0x0052], SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    private int[] blackWhiteRange(int r5, int r6, int r7, int r8, boolean r9) {
+        /*
+            r4 = this;
+            int r0 = r7 + r8
+            int r0 = r0 / 2
+            r1 = r0
+        L5:
+            if (r1 < r7) goto L39
+            com.google.zxing.common.BitMatrix r2 = r4.image
+            if (r9 == 0) goto L12
+            boolean r2 = r2.get(r1, r5)
+            if (r2 == 0) goto L1b
+            goto L18
+        L12:
+            boolean r2 = r2.get(r5, r1)
+            if (r2 == 0) goto L1b
+        L18:
+            int r1 = r1 + (-1)
+            goto L5
+        L1b:
+            r2 = r1
+        L1c:
+            int r2 = r2 + (-1)
+            if (r2 < r7) goto L31
+            com.google.zxing.common.BitMatrix r3 = r4.image
+            if (r9 == 0) goto L2b
+            boolean r3 = r3.get(r2, r5)
+            if (r3 == 0) goto L1c
+            goto L31
+        L2b:
+            boolean r3 = r3.get(r5, r2)
+            if (r3 == 0) goto L1c
+        L31:
+            if (r2 < r7) goto L39
+            int r3 = r1 - r2
+            if (r3 > r6) goto L39
+            r1 = r2
+            goto L5
+        L39:
+            int r1 = r1 + 1
+        L3b:
+            if (r0 >= r8) goto L6f
+            com.google.zxing.common.BitMatrix r7 = r4.image
+            if (r9 == 0) goto L48
+            boolean r7 = r7.get(r0, r5)
+            if (r7 == 0) goto L51
+            goto L4e
+        L48:
+            boolean r7 = r7.get(r5, r0)
+            if (r7 == 0) goto L51
+        L4e:
+            int r0 = r0 + 1
+            goto L3b
+        L51:
+            r7 = r0
+        L52:
+            int r7 = r7 + 1
+            if (r7 >= r8) goto L67
+            com.google.zxing.common.BitMatrix r2 = r4.image
+            if (r9 == 0) goto L61
+            boolean r2 = r2.get(r7, r5)
+            if (r2 == 0) goto L52
+            goto L67
+        L61:
+            boolean r2 = r2.get(r5, r7)
+            if (r2 == 0) goto L52
+        L67:
+            if (r7 >= r8) goto L6f
+            int r2 = r7 - r0
+            if (r2 > r6) goto L6f
+            r0 = r7
+            goto L3b
+        L6f:
+            int r0 = r0 + (-1)
+            if (r0 <= r1) goto L78
+            int[] r4 = new int[]{r1, r0}
+            return r4
+        L78:
+            r4 = 0
+            return r4
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.zxing.common.detector.MonochromeRectangleDetector.blackWhiteRange(int, int, int, int, boolean):int[]");
+    }
+}

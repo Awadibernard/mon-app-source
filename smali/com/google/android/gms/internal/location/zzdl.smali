@@ -1,0 +1,34 @@
+###### Class com.google.android.gms.internal.identity.zzdl (com.google.android.gms.internal.location.zzdl)
+.class final Lcom/google/android/gms/internal/location/zzdl;
+.super Lcom/google/android/gms/internal/location/zzw;
+.source ""
+
+
+# instance fields
+.field final synthetic zza:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/gms/internal/location/zzdl;->zza:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/location/zzw;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zzb(Lcom/google/android/gms/common/api/Status;Lcom/google/android/gms/location/LocationAvailability;)V
+    .registers 3
+
+    .line 1
+    iget-object p0, p0, Lcom/google/android/gms/internal/location/zzdl;->zza:Lcom/google/android/gms/tasks/TaskCompletionSource;
+
+    invoke-static {p1, p2, p0}, Lcom/google/android/gms/common/api/internal/TaskUtil;->setResultOrApiException(Lcom/google/android/gms/common/api/Status;Ljava/lang/Object;Lcom/google/android/gms/tasks/TaskCompletionSource;)V
+
+    return-void
+.end method

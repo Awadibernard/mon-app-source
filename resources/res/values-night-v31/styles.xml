@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_2131951852_res_0x7f1300ec" parent="@style/_2131952084_res_0x7f1301d4">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">1</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowSplashScreenBackground">#ffd100</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">#ffd100</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+package com.google.android.gms.common.api.internal;
+
+import java.util.Objects;
+
+/* JADX INFO: loaded from: classes.dex */
+final class zabi implements Runnable {
+    final /* synthetic */ zabj zaa;
+
+    zabi(zabj zabjVar) {
+        Objects.requireNonNull(zabjVar);
+        this.zaa = zabjVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zabk zabkVar = this.zaa.zaa;
+        String name = zabkVar.zaz().getClass().getName();
+        String.valueOf(name);
+        zabkVar.zaz().disconnect(String.valueOf(name).concat(" disconnecting because it was signed out."));
+    }
+}

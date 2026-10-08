@@ -1,0 +1,61 @@
+###### Class com.google.zxing.aztec.AztecDetectorResult (com.google.zxing.aztec.AztecDetectorResult)
+.class public final Lcom/google/zxing/aztec/AztecDetectorResult;
+.super Lcom/google/zxing/common/DetectorResult;
+.source ""
+
+
+# instance fields
+.field private final compact:Z
+
+.field private final nbDatablocks:I
+
+.field private final nbLayers:I
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/zxing/common/BitMatrix;[Lcom/google/zxing/ResultPoint;ZII)V
+    .registers 6
+
+    .line 40
+    invoke-direct {p0, p1, p2}, Lcom/google/zxing/common/DetectorResult;-><init>(Lcom/google/zxing/common/BitMatrix;[Lcom/google/zxing/ResultPoint;)V
+
+    .line 41
+    iput-boolean p3, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->compact:Z
+
+    .line 42
+    iput p4, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->nbDatablocks:I
+
+    .line 43
+    iput p5, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->nbLayers:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getNbDatablocks()I
+    .registers 1
+
+    .line 51
+    iget p0, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->nbDatablocks:I
+
+    return p0
+.end method
+
+.method public final getNbLayers()I
+    .registers 1
+
+    .line 47
+    iget p0, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->nbLayers:I
+
+    return p0
+.end method
+
+.method public final isCompact()Z
+    .registers 1
+
+    .line 55
+    iget-boolean p0, p0, Lcom/google/zxing/aztec/AztecDetectorResult;->compact:Z
+
+    return p0
+.end method

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    orientation="0"
+    background="?attr/_2130968823_res_0x7f0400f7"
+    layout_width="-2"
+    layout_height="-2"
+    baselineAligned="false"
+    layoutDirection="0"
+    NOT_FOUND_0x9="0"
+    NOT_FOUND_0xa="0"
+    NOT_FOUND_0xb="0">
+    <include
+        id="@+id/_2131362115_res_0x7f0a0143"
+        layout_width="52dp"
+        layout_height="96dp"
+        layout_marginStart="0dp"
+        layout_marginEnd="12dp"
+        layout="@layout/_2131558472_res_0x7f0d0048"/>
+    <include layout="@layout/_2131558482_res_0x7f0d0052"/>
+</LinearLayout>

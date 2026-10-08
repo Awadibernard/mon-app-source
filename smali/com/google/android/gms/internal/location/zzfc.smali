@@ -1,0 +1,15 @@
+###### Class com.google.android.gms.internal.identity.zzfc (com.google.android.gms.internal.location.zzfc)
+.class public final Lcom/google/android/gms/internal/location/zzfc;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public static zza()Ljava/util/concurrent/Executor;
+    .registers 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/internal/location/zzfb;->zza:Lcom/google/android/gms/internal/location/zzfb;
+
+    return-object v0
+.end method

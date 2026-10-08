@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    textAppearance="?attr/_2130969555_res_0x7f0403d3"
+    textSize="56dp"
+    textColor="?attr/_2130968815_res_0x7f0400ef"
+    gravity="0x11"
+    layout_width="24dp"
+    layout_height="-2"
+    layout_marginTop="4dp"
+    text=":"
+    maxEms="1"
+    includeFontPadding="false"
+    lineSpacingExtra="0dp"
+    importantForAccessibility="2"/>

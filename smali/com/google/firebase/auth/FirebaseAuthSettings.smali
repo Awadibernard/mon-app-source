@@ -1,0 +1,26 @@
+###### Class com.google.firebase.auth.FirebaseAuthSettings (com.google.firebase.auth.FirebaseAuthSettings)
+.class public abstract Lcom/google/firebase/auth/FirebaseAuthSettings;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract forceRecaptchaFlowForTesting(Z)V
+.end method
+
+.method public abstract setAppVerificationDisabledForTesting(Z)V
+.end method
+
+.method public abstract setAutoRetrievedSmsCodeForPhoneNumber(Ljava/lang/String;Ljava/lang/String;)V
+.end method
